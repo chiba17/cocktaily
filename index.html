@@ -722,11 +722,16 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             transform: scale(0.95);
         }
 
-        /* Search Input - Adjusted Margin */
+        /* Content Body adjustment for sticky header */
+        .content-body {
+            padding: 0 20px;
+            padding-top: 14px; /* ヘッダー下部からの正確な余白 */
+        }
+
+        /* Search Input */
         .search-wrapper {
             position: relative;
             margin-bottom: 24px;
-            margin-top: 12px;
             height: 52px;
         }
         
@@ -766,6 +771,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
         }
         .search-input:focus + .search-icon { color: var(--text-primary); }
 
+        /* Search Count styled as a Button */
         .search-count {
             position: absolute;
             right: 8px;
@@ -792,10 +798,6 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
         }
 
         /* --- Sections & Panels --- */
-        .content-body {
-            padding: 0 20px;
-        }
-
         .section-title {
             font-family: 'Lora', serif;
             font-size: 15px;
@@ -1037,7 +1039,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
 
     <div class="ambient-light"></div>
 
-    <header class="app-header">
+    <header class="app-header" id="mainHeader">
         <div class="header-top-row">
             <div class="brand" id="appTitle">Cocktaily</div>
             <div class="header-actions">
@@ -1360,7 +1362,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ジン, シャルトリューズ緑, マラスキーノ, ライム</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">禁酒法時代の名作。強烈なハーブ香が魅力。</div>
+                <div class="desc-text">禁酒法時代のデトロイトで生まれた名作。強烈なハーブ香が魅力。</div>
                 <div class="tags-row">
                     <span class="pill">ジン</span>
                     <span class="pill">ショート</span>
@@ -2008,7 +2010,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ジン, スイートベルモット, マラスキーノ, ビターズ</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">マティーニの原型といわれる歴史的一杯。</div>
+                <div class="desc-text">マティーニの原型といわれる歴史的一杯。オールドトムジンを使うのが伝統的。</div>
                 <div class="tags-row">
                     <span class="pill">ジン</span>
                     <span class="pill">ショート</span>
@@ -2080,7 +2082,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ウォッカ, ライム, ジンジャーエール</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">ウォッカとジンジャービアの傑作。</div>
+                <div class="desc-text">「モスクワのラバ」。ウォッカとジンジャービアの傑作。</div>
                 <div class="tags-row">
                     <span class="pill">ウォッカ</span>
                     <span class="pill">ロング</span>
@@ -3616,7 +3618,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">テキーラ, メスカル, アガベシロップ, ビターズ</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">メスカルのアクセントが効いたネオ・クラシック。</div>
+                <div class="desc-text">現代のNYで生まれたネオ・クラシック。メスカルのアクセントが効いた一杯。</div>
                 <div class="tags-row">
                     <span class="pill">テキーラ</span>
                     <span class="pill">ショート</span>
@@ -4168,7 +4170,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">スコッチ, スイートベルモット, チェリーブランデー, オレンジ</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">ドラマチックな色合いと味が魅力。</div>
+                <div class="desc-text">映画を記念した一杯。ドラマチックな味。</div>
                 <div class="tags-row">
                     <span class="pill">ウイスキー</span>
                     <span class="pill">ショート</span>
@@ -4192,7 +4194,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">バーボン, アペロール, アマーロ, レモン</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">完璧なバランスのモダン・クラシック。</div>
+                <div class="desc-text">2008年誕生のニュー・クラシック。</div>
                 <div class="tags-row">
                     <span class="pill">ウイスキー</span>
                     <span class="pill">ショート</span>
@@ -4696,7 +4698,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">カルヴァドス, ベネディクティン, シャルトリューズ黄</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">非常に重厚で魅惑的な食後酒。</div>
+                <div class="desc-text">重厚で魅惑的な食後酒。</div>
                 <div class="tags-row">
                     <span class="pill">ブランデー</span>
                     <span class="pill">ショート</span>
@@ -5080,7 +5082,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">スーズ, トニックウォーター</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">独特の土っぽい苦味が癖になります。</div>
+                <div class="desc-text">独特の苦味が癖になります。</div>
                 <div class="tags-row">
                     <span class="pill">リキュール</span>
                     <span class="pill">ロング</span>
@@ -5725,7 +5727,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
                     <span class="name-en">Porto Flip</span>
                 </div>
             </div>
-            <div class="materials-preview">ポートワイン, ブランデー, 卵黄, 砂糖</div>
+            <div class="materials-preview">ポートワイン, 卵黄, 砂糖</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
                 <div class="desc-text">濃厚でリッチな滋養強壮酒。</div>
@@ -6583,7 +6585,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
         <!-- FAVORITES VIEW -->
         <div id="view-favorites" class="view-section">
             <div class="content-body">
-                <div class="results-heading" style="margin-top: 20px;">
+                <div class="results-heading" style="margin-top: 0;">
                     <h2>Favorites</h2>
                     <span class="results-count" id="favCount">0 SELECTIONS</span>
                 </div>
