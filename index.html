@@ -1,8 +1,4 @@
-<html lang="ja"><head><script>(function(firebaseConfig, initialAuthToken, appId) {
-        window.__firebase_config = firebaseConfig;
-        window.__initial_auth_token = initialAuthToken;
-        window.__app_id = appId;
-            })("\n{\n  \"apiKey\": \"AIzaSyCqyCcs2R2e7AegGjvFAwG98wlamtbHvZY\",\n  \"authDomain\": \"bard-frontend.firebaseapp.com\",\n  \"projectId\": \"bard-frontend\",\n  \"storageBucket\": \"bard-frontend.firebasestorage.app\",\n  \"messagingSenderId\": \"175205271074\",\n  \"appId\": \"1:175205271074:web:2b7bd4d34d33bf38e6ec7b\"\n}\n","eyJhbGciOiJSUzI1NiIsImtpZCI6ImE3ZTI3MWMzMmJkMTBkY2EwNTExOThmNjkwNjc3MGEzN2Q0MmRhM2IiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJmaXJlYmFzZS1hZG1pbnNkay1mYnN2Y0BiYXJkLWZyb250ZW5kLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJ1aWQiOiIwMzY4NzEzMTEyNjQyNDMzNzAyMyIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLWZic3ZjQGJhcmQtZnJvbnRlbmQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJjbGFpbXMiOnsiYXBwSWQiOiJjX2ExOGNhODliNWYyNjNlNjVfaW5kZXguaHRtbC0yNDkifSwiZXhwIjoxNzY4MzIwOTI2LCJpYXQiOjE3NjgzMTczMjYsImFsZyI6IlJTMjU2In0.p8sTv2jhqFcfghAFSPZCRecmjvoDZ1GiteyBqAZ18kuq-wrtOAD_qeIev9W7rrqYOUlHTdN1XkyNqSwfa-lDl1iAYJt-Tbm4xXBkkVuJBEDox7ZYPuXnOYIO8H8ldBVGr3tOOhgPLxdXKBaplt2gAxxHuJWsOnbwvaI4zCilukUNzJAHxAye1bpUNDI6ZAOz2Y8Ufb7NJOrMAWnDUck-94lIDfALUnmZdFcTtSf8BkWD_6mYUlz0_bTuaSaNfl9rVjNTg3kmE7TAnQngzQRdrZap-6Jmi2dCj0Lu8fMe8WL30baNy10r-suqkBEltHnq-bCYGwQM54LLA15u8dy3ZA","c_a18ca89b5f263e65_index.html-249")</script><script>'use strict';var h=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,d){if(a==Array.prototype||a==Object.prototype)return a;a[b]=d.value;return a};function l(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var d=a[b];if(d&&d.Math==Math)return d}throw Error("Cannot find global object");}var n=l(this);
+<html lang="ja"><head><script>'use strict';var h=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,d){if(a==Array.prototype||a==Object.prototype)return a;a[b]=d.value;return a};function l(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var d=a[b];if(d&&d.Math==Math)return d}throw Error("Cannot find global object");}var n=l(this);
 function p(a,b){if(b)a:{var d=n;a=a.split(".");for(var c=0;c<a.length-1;c++){var e=a[c];if(!(e in d))break a;d=d[e]}a=a[a.length-1];c=d[a];b=b(c);b!=c&&b!=null&&h(d,a,{configurable:!0,writable:!0,value:b})}}function r(a){function b(c){return a.next(c)}function d(c){return a.throw(c)}return new Promise(function(c,e){function f(g){g.done?c(g.value):Promise.resolve(g.value).then(b,d).then(f,e)}f(a.next())})}function t(a){return r(a())}
 p("Object.values",function(a){return a?a:function(b){var d=[],c;for(c in b)Object.prototype.hasOwnProperty.call(b,c)&&d.push(b[c]);return d}});p("Array.prototype.includes",function(a){return a?a:function(b,d){var c=this;c instanceof String&&(c=String(c));var e=c.length;d=d||0;for(d<0&&(d=Math.max(d+e,0));d<e;d++){var f=c[d];if(f===b||Object.is(f,b))return!0}return!1}});/*
 
@@ -726,7 +722,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             transform: scale(0.95);
         }
 
-        /* Search Input */
+        /* Search Input - Adjusted Margin */
         .search-wrapper {
             position: relative;
             margin-bottom: 24px;
@@ -740,7 +736,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             background: rgba(255, 255, 255, 0.04);
             border: 1px solid var(--glass-border);
             border-radius: 16px;
-            padding: 0 85px 0 50px;
+            padding: 0 90px 0 50px;
             color: var(--text-primary);
             font-family: 'Zen Kaku Gothic New', sans-serif;
             font-size: 16px;
@@ -770,7 +766,6 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
         }
         .search-input:focus + .search-icon { color: var(--text-primary); }
 
-        /* Search Count styled as a Button */
         .search-count {
             position: absolute;
             right: 8px;
@@ -1317,7 +1312,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ジン, パルフェタムール, レモン</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">「完全なる愛」という名のスミレのリキュールを使用した、神秘的な紫色のカクテル。一方で「Blue Moon」には「できない相談」という意味もあり、ミステリアスです。</div>
+                <div class="desc-text">「完全なる愛」という名のスミレのリキュールを使用した、神秘的な紫色のカクテル。ミステリアスです。</div>
                 <div class="tags-row">
                     <span class="pill">ジン</span>
                     <span class="pill">ショート</span>
@@ -1341,7 +1336,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ジン, マラスキーノ, レモン, パルフェタムール</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">「飛行機」。空のような薄紫色が美しいクラシックカクテル。航空機がまだ珍しく、空への憧れが強かった20世紀初頭に生まれました。</div>
+                <div class="desc-text">「飛行機」。空のような薄紫色が美しいクラシックカクテル。</div>
                 <div class="tags-row">
                     <span class="pill">ジン</span>
                     <span class="pill">ショート</span>
@@ -1365,7 +1360,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ジン, シャルトリューズ緑, マラスキーノ, ライム</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">禁酒法時代のデトロイトで生まれた名作。強烈なハーブ香が魅力。</div>
+                <div class="desc-text">禁酒法時代の名作。強烈なハーブ香が魅力。</div>
                 <div class="tags-row">
                     <span class="pill">ジン</span>
                     <span class="pill">ショート</span>
@@ -1389,7 +1384,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ジン, 蜂蜜, レモンジュース</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">「蜂の膝」＝「最高のもの」というスラングから。</div>
+                <div class="desc-text">「蜂の膝」＝「最高のもの」。</div>
                 <div class="tags-row">
                     <span class="pill">ジン</span>
                     <span class="pill">ショート</span>
@@ -1413,7 +1408,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ジン, コアントロー, リレブラン, レモン, アブサン</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">「死者を蘇らせるもの」。かつては二日酔いの迎え酒として考案されました。</div>
+                <div class="desc-text">「死者を蘇らせるもの」。</div>
                 <div class="tags-row">
                     <span class="pill">ジン</span>
                     <span class="pill">ショート</span>
@@ -1437,7 +1432,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ジン, レモン, 砂糖, シャンパン</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">第一次世界大戦時のフランス軍の大砲「75mm砲」に由来。</div>
+                <div class="desc-text">シャンパンの泡立ちの中に強いアルコールを感じる強力な一杯。</div>
                 <div class="tags-row">
                     <span class="pill">ジン</span>
                     <span class="pill">ロング</span>
@@ -1461,7 +1456,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">オールドトムジン, レモン, 砂糖, ソーダ</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">19世紀ロンドンの伝説的ウェイター、ジョン・コリンズに由来。</div>
+                <div class="desc-text">19世紀ロンドンの伝説的ウェイターに由来。</div>
                 <div class="tags-row">
                     <span class="pill">ジン</span>
                     <span class="pill">ロング</span>
@@ -1485,7 +1480,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ジン, ドライベルモット, スイートベルモット, オレンジ</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">マティーニにオレンジジュースを加えたようなフルーティーな食前酒。</div>
+                <div class="desc-text">フルーティーで口当たりの良い食前酒。</div>
                 <div class="tags-row">
                     <span class="pill">ジン</span>
                     <span class="pill">ショート</span>
@@ -1509,7 +1504,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ジン, シャルトリューズイエロー</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">ジンとシャルトリューズのみで作る、冷たく鋭い黄金色の一杯。</div>
+                <div class="desc-text">冷たく鋭い黄金色の一杯。</div>
                 <div class="tags-row">
                     <span class="pill">ジン</span>
                     <span class="pill">ショート</span>
@@ -1533,7 +1528,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ジン, ウォッカ, リレ・ブラン</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">『007』でジェームズ・ボンドが注文したオリジナル・マティーニ。</div>
+                <div class="desc-text">『007』ジェームズ・ボンドのオリジナル・マティーニ。</div>
                 <div class="tags-row">
                     <span class="pill">ジン</span>
                     <span class="pill">ショート</span>
@@ -1581,7 +1576,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ジン, グレナデンシロップ, 卵白</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">卵白による優しい口当たりと愛らしいピンク色が特徴。</div>
+                <div class="desc-text">優しい口当たりと愛らしいピンク色が特徴。</div>
                 <div class="tags-row">
                     <span class="pill">ジン</span>
                     <span class="pill">ショート</span>
@@ -1605,7 +1600,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ジン, アプリコットブランデー, オレンジジュース</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">「楽園」の名にふさわしい、フルーティーで飲みやすいカクテル。</div>
+                <div class="desc-text">「楽園」の名にふさわしい、飲みやすいカクテル。</div>
                 <div class="tags-row">
                     <span class="pill">ジン</span>
                     <span class="pill">ショート</span>
@@ -1629,7 +1624,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ジン, レモン, 砂糖, ブラックベリーリキュール</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">1980年代ロンドン発のモダンクラシック。ベリーの茂みを表現。</div>
+                <div class="desc-text">ベリーの茂み（Bramble）を表現。</div>
                 <div class="tags-row">
                     <span class="pill">ジン</span>
                     <span class="pill">ショート</span>
@@ -1653,7 +1648,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ジン, ラズベリーシロップ, レモン, 卵白</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">ラズベリーと卵白が生み出す美しいピンク色と滑らかなテクスチャー。</div>
+                <div class="desc-text">滑らかなテクスチャーが魅力です。</div>
                 <div class="tags-row">
                     <span class="pill">ジン</span>
                     <span class="pill">ショート</span>
@@ -1701,7 +1696,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ジン, オレンジ, グレナデン, アブサン</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">1920年代パリで考案。味はフルーティーで美味です。</div>
+                <div class="desc-text">1920年代パリで考案。フルーティーで美味。</div>
                 <div class="tags-row">
                     <span class="pill">ジン</span>
                     <span class="pill">ショート</span>
@@ -1725,7 +1720,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">オールドトムジン, マラスキーノ, レモン, ビターズ</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">甘口のオールドトムジンを使用し、チェリーリキュールで風味付け。</div>
+                <div class="desc-text">カクテル言葉は「愉快」や「ギャンブル」。</div>
                 <div class="tags-row">
                     <span class="pill">ジン</span>
                     <span class="pill">ショート</span>
@@ -1749,7 +1744,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ジン, ウォッカ, ラム, テキーラ, コーラ</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">紅茶を使わずにアイスティーを再現した魔法のカクテル。</div>
+                <div class="desc-text">紅茶を一滴も使わずにその味を再現。</div>
                 <div class="tags-row">
                     <span class="pill">ジン</span>
                     <span class="pill">ロング</span>
@@ -1773,7 +1768,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ジン, オレンジキュラソー, ライム, ビターズ</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">19世紀ミャンマーの英国将校クラブのシグネチャー。</div>
+                <div class="desc-text">英国将校クラブのシグネチャー。</div>
                 <div class="tags-row">
                     <span class="pill">ジン</span>
                     <span class="pill">ショート</span>
@@ -1797,7 +1792,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ジン, レモン, ジンジャーエール</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">ジンのボタニカルとジンジャーエールの刺激が心地よい。</div>
+                <div class="desc-text">爽快なロングカクテル。</div>
                 <div class="tags-row">
                     <span class="pill">ジン</span>
                     <span class="pill">ロング</span>
@@ -1821,7 +1816,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ジン, グレープフルーツ, 塩</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">本来ソルティドッグはジンベースで英国生まれ。</div>
+                <div class="desc-text">本来はジンベースで英国生まれ。</div>
                 <div class="tags-row">
                     <span class="pill">ジン</span>
                     <span class="pill">ロング</span>
@@ -1845,7 +1840,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ジン, トニック, ソーダ, ライム</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">トニックとソーダを半々で割るスタイル。</div>
+                <div class="desc-text">トニックの甘さを抑え、さっぱりとした飲み口。</div>
                 <div class="tags-row">
                     <span class="pill">ジン</span>
                     <span class="pill">ロング</span>
@@ -1869,7 +1864,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ジン, オレンジジュース, ジンジャーエール</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">ジンにオレンジとジンジャーエールを合わせた古いレシピ。</div>
+                <div class="desc-text">オレンジとジンジャーエールがマッチ。</div>
                 <div class="tags-row">
                     <span class="pill">ジン</span>
                     <span class="pill">ショート</span>
@@ -1893,7 +1888,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ジン, ドライベルモット, カシス</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">マティーニにカシスを加えた、深紅の美しいカクテル。</div>
+                <div class="desc-text">深紅の美しいカクテル。</div>
                 <div class="tags-row">
                     <span class="pill">ジン</span>
                     <span class="pill">ショート</span>
@@ -1917,7 +1912,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ジン, ブルーキュラソー, レモン</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">ホワイトレディを鮮やかな青色にしたもの。</div>
+                <div class="desc-text">ホワイトレディを涼しげな青色に。</div>
                 <div class="tags-row">
                     <span class="pill">ジン</span>
                     <span class="pill">ショート</span>
@@ -1941,7 +1936,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ジン, オレンジキュラソー, パイン</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">パイナップルジュースを使い、南国風に仕上げたショート。</div>
+                <div class="desc-text">南国風に仕上げたショートカクテル。</div>
                 <div class="tags-row">
                     <span class="pill">ジン</span>
                     <span class="pill">ショート</span>
@@ -1989,7 +1984,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ジン, ライム, ソーダ</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">ジンリッキーの別称に近いが、よりライムを強調。</div>
+                <div class="desc-text">シンプルなソーダ割り。</div>
                 <div class="tags-row">
                     <span class="pill">ジン</span>
                     <span class="pill">ロング</span>
@@ -2013,7 +2008,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ジン, スイートベルモット, マラスキーノ, ビターズ</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">マティーニの原型といわれる歴史的一杯。オールドトムジンを使うのが伝統的。</div>
+                <div class="desc-text">マティーニの原型といわれる歴史的一杯。</div>
                 <div class="tags-row">
                     <span class="pill">ジン</span>
                     <span class="pill">ショート</span>
@@ -2037,7 +2032,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ジン, スイートベルモット, フェルネットブランカ</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">サヴォイ・ホテルの伝説的バーテンダー、エイダ・コールマンが考案。</div>
+                <div class="desc-text">伝説的女性バーテンダーが考案。</div>
                 <div class="tags-row">
                     <span class="pill">ジン</span>
                     <span class="pill">ショート</span>
@@ -2061,7 +2056,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ジン, スイートベルモット, シャルトリューズ緑</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">「宝石」を意味する名作。3つの色が複雑に重なり合う贅沢な一杯。</div>
+                <div class="desc-text">宝石を意味する名作。3つの色が複雑に重なり合います。</div>
                 <div class="tags-row">
                     <span class="pill">ジン</span>
                     <span class="pill">ショート</span>
@@ -2085,7 +2080,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ウォッカ, ライム, ジンジャーエール</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">「モスクワのラバ」。ウォッカとジンジャービアの傑作。</div>
+                <div class="desc-text">ウォッカとジンジャービアの傑作。</div>
                 <div class="tags-row">
                     <span class="pill">ウォッカ</span>
                     <span class="pill">ロング</span>
@@ -2133,7 +2128,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ウォッカ, グレープフルーツジュース, 塩</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">グラス縁の塩とグレープフルーツの苦味がベストマッチ。</div>
+                <div class="desc-text">グラス縁の塩と苦味がベストマッチ。</div>
                 <div class="tags-row">
                     <span class="pill">ウォッカ</span>
                     <span class="pill">ロング</span>
@@ -2181,7 +2176,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ウォッカ, ホワイトキュラソー, ライム</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">鋭い切れ味のカクテル。ライムの酸味が全体を引き締めます。</div>
+                <div class="desc-text">ライムの酸味が全体をキリッと引き締めます。</div>
                 <div class="tags-row">
                     <span class="pill">ウォッカ</span>
                     <span class="pill">ショート</span>
@@ -2229,7 +2224,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ウォッカ, ホワイトキュラソー, クランベリー, ライム</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">ドラマ『SATC』で大ブレイク。</div>
+                <div class="desc-text">洗練された都会の女性の象徴。</div>
                 <div class="tags-row">
                     <span class="pill">ウォッカ</span>
                     <span class="pill">ショート</span>
@@ -2277,7 +2272,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ウォッカ, ライム, 辛口ジンジャーエール</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">辛口ジンジャーエールを使用した、より刺激的な一杯。</div>
+                <div class="desc-text">辛口ジンジャーエールを使用した刺激的な一杯。</div>
                 <div class="tags-row">
                     <span class="pill">ウォッカ</span>
                     <span class="pill">ロング</span>
@@ -2325,7 +2320,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ウォッカ, エスプレッソ, コーヒーリキュール, シロップ</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">近年世界的大流行のモダンクラシック。</div>
+                <div class="desc-text">エスプレッソの苦味と豊かな泡立ちが特徴。</div>
                 <div class="tags-row">
                     <span class="pill">ウォッカ</span>
                     <span class="pill">ショート</span>
@@ -2397,7 +2392,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ウォッカ, クランベリージュース, グレープフルーツ</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">「海のそよ風」。爽やかな酸味のロングカクテル。</div>
+                <div class="desc-text">クランベリーとグレープフルーツの爽やかな酸味。</div>
                 <div class="tags-row">
                     <span class="pill">ウォッカ</span>
                     <span class="pill">ロング</span>
@@ -2469,7 +2464,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ウォッカ, ブルーキュラソー, レモン, ソーダ</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">鮮やかな青色が美しいパリ生まれのカクテル。</div>
+                <div class="desc-text">鮮やかな青色が美しい一杯。</div>
                 <div class="tags-row">
                     <span class="pill">ウォッカ</span>
                     <span class="pill">ロング</span>
@@ -2493,7 +2488,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ウォッカ, オレンジジュース, ガリアーノ</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">スクリュードライバーにガリアーノをフロート。</div>
+                <div class="desc-text">ガリアーノをフロートさせたもの。</div>
                 <div class="tags-row">
                     <span class="pill">ウォッカ</span>
                     <span class="pill">ロング</span>
@@ -2517,7 +2512,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ウォッカ, クランベリージュース, ライム</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">ウォッカのクランベリー割り。</div>
+                <div class="desc-text">甘酸っぱく飲みやすい一杯。</div>
                 <div class="tags-row">
                     <span class="pill">ウォッカ</span>
                     <span class="pill">ロング</span>
@@ -2565,7 +2560,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">シトラスウォッカ, レモン, 砂糖</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">甘酸っぱいレモンキャンディのようなカクテル。</div>
+                <div class="desc-text">甘酸っぱいレモンキャンディのような味わい。</div>
                 <div class="tags-row">
                     <span class="pill">ウォッカ</span>
                     <span class="pill">ショート</span>
@@ -2589,7 +2584,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ウォッカ, アップルリキュール, レモン</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">NYで大流行したモダンマティーニ。</div>
+                <div class="desc-text">青リンゴの爽やかな香りが特徴。</div>
                 <div class="tags-row">
                     <span class="pill">ウォッカ</span>
                     <span class="pill">ショート</span>
@@ -2613,7 +2608,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ウォッカ, カカオリキュール, 生クリーム</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">アレキサンダーのベースをウォッカに変えたもの。</div>
+                <div class="desc-text">アレキサンダーのウォッカ版。</div>
                 <div class="tags-row">
                     <span class="pill">ウォッカ</span>
                     <span class="pill">ショート</span>
@@ -2637,7 +2632,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ウォッカ, ビーフブイヨン, レモン, 香辛料</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">冷たいコンソメスープにウォッカを加えた異色作。</div>
+                <div class="desc-text">冷たいコンソメスープにウォッカを加えたもの。</div>
                 <div class="tags-row">
                     <span class="pill">ウォッカ</span>
                     <span class="pill">ロング</span>
@@ -2685,7 +2680,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ウォッカ, ライム, ソーダ</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">砂糖を使わないドライな味わい。</div>
+                <div class="desc-text">ドライな味わいで食後に最適。</div>
                 <div class="tags-row">
                     <span class="pill">ウォッカ</span>
                     <span class="pill">ロング</span>
@@ -2709,7 +2704,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ウォッカ, ライムジュース</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">「大型ハンマー」の意味。パンチの効いた味わい。</div>
+                <div class="desc-text">「大型ハンマー」の意味。パンチがあります。</div>
                 <div class="tags-row">
                     <span class="pill">ウォッカ</span>
                     <span class="pill">ショート</span>
@@ -2733,7 +2728,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ウォッカ, クランベリー, オレンジ</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">鮮やかな色合いがマドラスチェックを思わせる。</div>
+                <div class="desc-text">鮮やかな色合いが魅力。</div>
                 <div class="tags-row">
                     <span class="pill">ウォッカ</span>
                     <span class="pill">ロング</span>
@@ -2757,7 +2752,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ウォッカ, クランベリー, パイン</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">「ハワイアン・シーブリーズ」とも。</div>
+                <div class="desc-text">クランベリーとパインの甘酸っぱさ。</div>
                 <div class="tags-row">
                     <span class="pill">ウォッカ</span>
                     <span class="pill">ロング</span>
@@ -2781,7 +2776,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ウォッカ, ドライベルモット</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">「カンガルー」とも呼ばれるクリアなマティーニ。</div>
+                <div class="desc-text">ジンよりもクリアで癖のない味わい。</div>
                 <div class="tags-row">
                     <span class="pill">ウォッカ</span>
                     <span class="pill">ショート</span>
@@ -2805,7 +2800,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ホワイトラム, ミント, ライム, 砂糖, ソーダ</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">ヘミングウェイ愛飲。清涼感No.1カクテル。</div>
+                <div class="desc-text">清涼感No.1のキューバ国民酒。</div>
                 <div class="tags-row">
                     <span class="pill">ラム</span>
                     <span class="pill">ロング</span>
@@ -2853,7 +2848,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ホワイトラム, コーラ, ライム</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">「キューバの自由万歳」。ラムとコーラの相性は抜群。</div>
+                <div class="desc-text">「キューバの自由万歳」。</div>
                 <div class="tags-row">
                     <span class="pill">ラム</span>
                     <span class="pill">ロング</span>
@@ -2877,7 +2872,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ホワイトラム, ホワイトキュラソー, レモン</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">「最高の」一杯。</div>
+                <div class="desc-text">「最高の」「これ以上のない」一杯。</div>
                 <div class="tags-row">
                     <span class="pill">ラム</span>
                     <span class="pill">ショート</span>
@@ -2949,7 +2944,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ホワイトラム, ブルーキュラソー, パイン, レモン</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">ハワイの海色が美しいカクテル。</div>
+                <div class="desc-text">ハワイの海色が美しい。</div>
                 <div class="tags-row">
                     <span class="pill">ラム</span>
                     <span class="pill">ロング</span>
@@ -2973,7 +2968,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ホワイトラム, レモン, 砂糖, ジンジャーエール</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">ラムの甘みをレモンが爽快に引き立てる。</div>
+                <div class="desc-text">清涼感あふれるロングカクテル。</div>
                 <div class="tags-row">
                     <span class="pill">ラム</span>
                     <span class="pill">ロング</span>
@@ -2997,7 +2992,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ラム, スイートベルモット, パイン, 卵白</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">横浜生まれの日本発世界的カクテル。</div>
+                <div class="desc-text">日本発世界的カクテル。</div>
                 <div class="tags-row">
                     <span class="pill">ラム</span>
                     <span class="pill">ショート</span>
@@ -3021,7 +3016,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ラム, ブルーキュラソー, ライム</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">澄み切った青空のような日本の名作。</div>
+                <div class="desc-text">澄み切った青空のような美しさ。</div>
                 <div class="tags-row">
                     <span class="pill">ラム</span>
                     <span class="pill">ショート</span>
@@ -3045,7 +3040,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ダークラム, ジンジャービア, ライム</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">スパイシーなジンジャービアにラムをフロート。</div>
+                <div class="desc-text">スパイシーなジンジャービアが効いています。</div>
                 <div class="tags-row">
                     <span class="pill">ラム</span>
                     <span class="pill">ロング</span>
@@ -3093,7 +3088,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ダークラム, カンパリ, パインジュース, ライム, 砂糖</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">苦味と甘みが融合したビター系トロピカル。</div>
+                <div class="desc-text">ビター系トロピカル。</div>
                 <div class="tags-row">
                     <span class="pill">ラム</span>
                     <span class="pill">ショート</span>
@@ -3117,7 +3112,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ホワイトラム, マラスキーノ, GFJ, ライム</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">通称パパ・ダイキリ。ドライな味わい。</div>
+                <div class="desc-text">ドライでストレートなダイキリ。</div>
                 <div class="tags-row">
                     <span class="pill">ラム</span>
                     <span class="pill">ショート</span>
@@ -3141,7 +3136,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">カシャッサ, ライム, 砂糖</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">ブラジルの国民酒。ぶつ切りライムが野性的。</div>
+                <div class="desc-text">ブラジルの国民酒。野性的。</div>
                 <div class="tags-row">
                     <span class="pill">ラム</span>
                     <span class="pill">ショート</span>
@@ -3165,7 +3160,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ホワイトラム, トニックウォーター, ライム</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">甘い香りをトニックの苦味が引き締める。</div>
+                <div class="desc-text">ラムの甘い香りをトニックが引き締める。</div>
                 <div class="tags-row">
                     <span class="pill">ラム</span>
                     <span class="pill">ロング</span>
@@ -3189,7 +3184,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ラム, グレープフルーツジュース, トニックウォーター</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">「キューバの太陽」。神戸発祥の傑作。</div>
+                <div class="desc-text">「キューバの太陽」。神戸発祥。</div>
                 <div class="tags-row">
                     <span class="pill">ラム</span>
                     <span class="pill">ロング</span>
@@ -3213,7 +3208,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">数種のラム, パイン, ライム, グレナデン等</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">「3杯飲めば死人のようになる」強力な一杯。</div>
+                <div class="desc-text">悪魔的な美味しさとパンチ。</div>
                 <div class="tags-row">
                     <span class="pill">ラム</span>
                     <span class="pill">ロング</span>
@@ -3237,7 +3232,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">テキーラ, ホワイトキュラソー, ライム, 塩</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">亡き恋人を偲んで作ったとされる切ない名作。</div>
+                <div class="desc-text">亡き恋人を偲んで作った切ない名作。</div>
                 <div class="tags-row">
                     <span class="pill">テキーラ</span>
                     <span class="pill">ショート</span>
@@ -3261,7 +3256,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">テキーラ, オレンジジュース, グレナデンシロップ</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">朝焼けのグラデーションを描く美しい一杯。</div>
+                <div class="desc-text">朝焼けのグラデーションを描く一杯。</div>
                 <div class="tags-row">
                     <span class="pill">テキーラ</span>
                     <span class="pill">ロング</span>
@@ -3285,7 +3280,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">テキーラ, パインジュース, ライム</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">「闘牛士」。パインの甘みで情熱的に。</div>
+                <div class="desc-text">「闘牛士」。パインの甘みが絶妙。</div>
                 <div class="tags-row">
                     <span class="pill">テキーラ</span>
                     <span class="pill">ロング</span>
@@ -3405,7 +3400,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">テキーラ, オレンジジュース, レモンジュース</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">オレンジの香りが喉の渇きを癒やす。</div>
+                <div class="desc-text">喉の渇きを癒やす酸味。</div>
                 <div class="tags-row">
                     <span class="pill">テキーラ</span>
                     <span class="pill">ショート</span>
@@ -3453,7 +3448,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">テキーラ, アガベシロップ, ライム</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">アガベシロップを使った現代版。</div>
+                <div class="desc-text">アガベ本来の風味が強調されます。</div>
                 <div class="tags-row">
                     <span class="pill">テキーラ</span>
                     <span class="pill">ショート</span>
@@ -3525,7 +3520,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">テキーラ, ホワイトキュラソー, GFJ, グレナデン</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">場の雰囲気を和ませる鮮やかな赤色。</div>
+                <div class="desc-text">場の雰囲気を和ませる一杯。</div>
                 <div class="tags-row">
                     <span class="pill">テキーラ</span>
                     <span class="pill">ロング</span>
@@ -3549,7 +3544,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">テキーラ, コアントロー, オレンジジュース, グレナデン</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">可憐なシクラメンの花のような色。</div>
+                <div class="desc-text">可憐な花のような色合い。</div>
                 <div class="tags-row">
                     <span class="pill">テキーラ</span>
                     <span class="pill">ショート</span>
@@ -3621,7 +3616,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">テキーラ, メスカル, アガベシロップ, ビターズ</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">現代のNYで生まれたネオ・クラシック。メスカルのアクセントがテキーラの奥行きを広げる。</div>
+                <div class="desc-text">メスカルのアクセントが効いたネオ・クラシック。</div>
                 <div class="tags-row">
                     <span class="pill">テキーラ</span>
                     <span class="pill">ショート</span>
@@ -3645,7 +3640,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ウイスキー, ソーダ</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">炭酸が弾けさせる至高のスタイル。</div>
+                <div class="desc-text">ウイスキーの個性を炭酸が引き立てる。</div>
                 <div class="tags-row">
                     <span class="pill">ウイスキー</span>
                     <span class="pill">ロング</span>
@@ -3717,7 +3712,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ウイスキー, アマレット</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">アマレットが重厚な世界観を表現。</div>
+                <div class="desc-text">芳醇な香りが重厚な世界観を表現。</div>
                 <div class="tags-row">
                     <span class="pill">ウイスキー</span>
                     <span class="pill">ショート</span>
@@ -3741,7 +3736,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">スコッチウイスキー, ドランブイ</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">「錆びた釘」。まろやかで奥深い一杯。</div>
+                <div class="desc-text">「錆びた釘」。まろやかで奥深い。</div>
                 <div class="tags-row">
                     <span class="pill">ウイスキー</span>
                     <span class="pill">ショート</span>
@@ -3765,7 +3760,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ウイスキー, レモンジュース, 砂糖, (卵白)</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">レモンの酸味でウイスキーを飲みやすく。</div>
+                <div class="desc-text">レモンの酸味と砂糖の甘味。</div>
                 <div class="tags-row">
                     <span class="pill">ウイスキー</span>
                     <span class="pill">ショート</span>
@@ -3789,7 +3784,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">バーボン, ミント, 砂糖, クラッシュアイス</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">キンキンに冷やして飲む南部流。</div>
+                <div class="desc-text">たっぷり氷の南部流スタイル。</div>
                 <div class="tags-row">
                     <span class="pill">ウイスキー</span>
                     <span class="pill">ロング</span>
@@ -3813,7 +3808,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ライウイスキー, ライム, グレナデン, 砂糖</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">大都市の夕暮れを思わせるオレンジ色。</div>
+                <div class="desc-text">大都市の夕暮れを思わせる色。</div>
                 <div class="tags-row">
                     <span class="pill">ウイスキー</span>
                     <span class="pill">ショート</span>
@@ -3837,7 +3832,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">スコッチウイスキー, ライム, ジンジャーエール</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">スコッチのスモーキーさと辛味がマッチ。</div>
+                <div class="desc-text">スコッチとジンジャーエールのマッチ。</div>
                 <div class="tags-row">
                     <span class="pill">ウイスキー</span>
                     <span class="pill">ロング</span>
@@ -3885,7 +3880,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">スコッチ, レモン, 蜂蜜生姜シロップ, アイラモルト</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">スモーキーなアイラをフロートさせた薬効感。</div>
+                <div class="desc-text">スモーキーなアイラをフロート。</div>
                 <div class="tags-row">
                     <span class="pill">ウイスキー</span>
                     <span class="pill">ショート</span>
@@ -3909,7 +3904,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ウイスキー, カンパリ, スイートベルモット</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">リッチで温かみのある大人の味。</div>
+                <div class="desc-text">リッチで温かみのある味。</div>
                 <div class="tags-row">
                     <span class="pill">ウイスキー</span>
                     <span class="pill">ショート</span>
@@ -3957,7 +3952,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ウイスキー, トニックウォーター</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">樽香がよく合うトニック割り。</div>
+                <div class="desc-text">樽香がトニックによく合います。</div>
                 <div class="tags-row">
                     <span class="pill">ウイスキー</span>
                     <span class="pill">ロング</span>
@@ -3981,7 +3976,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ライウイスキー, レモン, オレンジ, グレナデン</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">ボストン発祥のフルーティーな一杯。</div>
+                <div class="desc-text">フルーティーな一杯。</div>
                 <div class="tags-row">
                     <span class="pill">ウイスキー</span>
                     <span class="pill">ショート</span>
@@ -4029,7 +4024,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ライウイスキー, ドライベルモット, カンパリ</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">「古い友人」という名の辛口。</div>
+                <div class="desc-text">「古い友人」。辛口でシャープ。</div>
                 <div class="tags-row">
                     <span class="pill">ウイスキー</span>
                     <span class="pill">ショート</span>
@@ -4050,7 +4045,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
                     <span class="name-en">Sazerac</span>
                 </div>
             </div>
-            <div class="materials-preview">ライウイスキー, アブサン, 砂糖, ペイショーズビターズ</div>
+            <div class="materials-preview">ライウイスキー, アブサン, 砂糖, ビターズ</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
                 <div class="desc-text">世界最古のカクテルの一つ。</div>
@@ -4098,10 +4093,10 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
                     <span class="name-en">Brooklyn</span>
                 </div>
             </div>
-            <div class="materials-preview">ライウイスキー, ドライベルモット, アメールピコン, マラスキーノ</div>
+            <div class="materials-preview">ライウイスキー, ドライベルモット, 苦味酒, マラスキーノ</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">幻のカクテルとも呼ばれる。</div>
+                <div class="desc-text">幻のカクテルとも。</div>
                 <div class="tags-row">
                     <span class="pill">ウイスキー</span>
                     <span class="pill">ショート</span>
@@ -4125,7 +4120,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ライウイスキー, ベネディクティン, ビターズ</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">リッチでエレガントな味わい。</div>
+                <div class="desc-text">リッチでエレガント。</div>
                 <div class="tags-row">
                     <span class="pill">ウイスキー</span>
                     <span class="pill">ショート</span>
@@ -4146,10 +4141,10 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
                     <span class="name-en">Remember the Maine</span>
                 </div>
             </div>
-            <div class="materials-preview">ライウイスキー, スイートベルモット, チェリーヒーリング, アブサン</div>
+            <div class="materials-preview">ライウイスキー, スイートベルモット, チェリー, アブサン</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">アブサンが香る力強い一杯。</div>
+                <div class="desc-text">力強いウイスキーを彩る味。</div>
                 <div class="tags-row">
                     <span class="pill">ウイスキー</span>
                     <span class="pill">ショート</span>
@@ -4173,7 +4168,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">スコッチ, スイートベルモット, チェリーブランデー, オレンジ</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">1922年の映画を記念した一杯。ドラマチックな味。</div>
+                <div class="desc-text">ドラマチックな色合いと味が魅力。</div>
                 <div class="tags-row">
                     <span class="pill">ウイスキー</span>
                     <span class="pill">ショート</span>
@@ -4194,10 +4189,10 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
                     <span class="name-en">Paper Plane</span>
                 </div>
             </div>
-            <div class="materials-preview">バーボン, アペロール, アマーロ・ノニーノ, レモン</div>
+            <div class="materials-preview">バーボン, アペロール, アマーロ, レモン</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">2008年誕生のニュー・クラシック。完璧なバランス。</div>
+                <div class="desc-text">完璧なバランスのモダン・クラシック。</div>
                 <div class="tags-row">
                     <span class="pill">ウイスキー</span>
                     <span class="pill">ショート</span>
@@ -4245,7 +4240,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ブランデー, カカオリキュール, 生クリーム</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">カカオとクリームの贅沢デザート。</div>
+                <div class="desc-text">贅沢なデザートカクテル。</div>
                 <div class="tags-row">
                     <span class="pill">ブランデー</span>
                     <span class="pill">ショート</span>
@@ -4269,7 +4264,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">カルヴァドス, ライム, グレナデンシロップ</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">バラのつぼみのようなカクテル。</div>
+                <div class="desc-text">バラのつぼみのような一杯。</div>
                 <div class="tags-row">
                     <span class="pill">ブランデー</span>
                     <span class="pill">ショート</span>
@@ -4293,7 +4288,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ブランデー, レモン, 砂糖, シャンパン</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">シャンパンを使ったリッチな一杯。</div>
+                <div class="desc-text">重厚でリッチな味わい。</div>
                 <div class="tags-row">
                     <span class="pill">ブランデー</span>
                     <span class="pill">ロング</span>
@@ -4317,7 +4312,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ブランデー, ジンジャーエール, レモンの皮</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">長くむいたレモンの皮が特徴。</div>
+                <div class="desc-text">見た目も楽しい一杯。</div>
                 <div class="tags-row">
                     <span class="pill">ブランデー</span>
                     <span class="pill">ロング</span>
@@ -4341,7 +4336,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ブランデー, レモンスライス, 砂糖</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">口の中で完成させる異色作。</div>
+                <div class="desc-text">口内調理カクテル。</div>
                 <div class="tags-row">
                     <span class="pill">ブランデー</span>
                     <span class="pill">ショート</span>
@@ -4365,7 +4360,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ブランデー, アマレット</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">ブランデーとアマレットの相性が抜群。</div>
+                <div class="desc-text">アマレットとの相性が抜群。</div>
                 <div class="tags-row">
                     <span class="pill">ブランデー</span>
                     <span class="pill">ショート</span>
@@ -4389,7 +4384,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ブランデー, ホワイトミント</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">ミントの鋭い清涼感の食後酒。</div>
+                <div class="desc-text">ミントの鋭い清涼感。</div>
                 <div class="tags-row">
                     <span class="pill">ブランデー</span>
                     <span class="pill">ショート</span>
@@ -4413,7 +4408,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">カルヴァドス, トニックウォーター</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">リンゴの香りと苦味がマッチ。</div>
+                <div class="desc-text">リンゴの香りとトニックの苦味。</div>
                 <div class="tags-row">
                     <span class="pill">ブランデー</span>
                     <span class="pill">ロング</span>
@@ -4437,7 +4432,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ブランデー, スイートベルモット</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">優雅な余韻を残す美しい一杯。</div>
+                <div class="desc-text">優雅な余韻を残す一杯。</div>
                 <div class="tags-row">
                     <span class="pill">ブランデー</span>
                     <span class="pill">ショート</span>
@@ -4461,7 +4456,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ライウイスキー, ブランデー, スイートベルモット, ベネディクティン</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">ニューオーリンズ生まれの名作。</div>
+                <div class="desc-text">複雑に絡み合う名作。</div>
                 <div class="tags-row">
                     <span class="pill">ブランデー</span>
                     <span class="pill">ショート</span>
@@ -4509,7 +4504,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ブランデー, ホワイトラム, コアントロー, レモン</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">寝酒として有名な一杯。</div>
+                <div class="desc-text">「ベッドに入って」。</div>
                 <div class="tags-row">
                     <span class="pill">ブランデー</span>
                     <span class="pill">ショート</span>
@@ -4533,7 +4528,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ピスコ, レモン, 砂糖, 卵白, ビターズ</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">ペルーとチリの国民的カクテル。</div>
+                <div class="desc-text">ペルーとチリの国民的酒。</div>
                 <div class="tags-row">
                     <span class="pill">ブランデー</span>
                     <span class="pill">ショート</span>
@@ -4557,7 +4552,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ブランデー, オレンジキュラソー, オレンジジュース</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">コニャックとオレンジの格式高い味。</div>
+                <div class="desc-text">格式高い味わいです。</div>
                 <div class="tags-row">
                     <span class="pill">ブランデー</span>
                     <span class="pill">ショート</span>
@@ -4629,7 +4624,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">アップルブランデー, ベネディクティン, キュラソー, レモン</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">甘く幸せな「蜜月」の味。</div>
+                <div class="desc-text">甘く幸せな味わい。</div>
                 <div class="tags-row">
                     <span class="pill">ブランデー</span>
                     <span class="pill">ショート</span>
@@ -4653,7 +4648,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">アップルブランデー, レモン, 砂糖, ソーダ</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">爽やかで知的な味わい。</div>
+                <div class="desc-text">爽やかで知的なロング。</div>
                 <div class="tags-row">
                     <span class="pill">ブランデー</span>
                     <span class="pill">ロング</span>
@@ -4701,7 +4696,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">カルヴァドス, ベネディクティン, シャルトリューズ黄</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">非常に重厚で魅惑的な食後酒。蜜のような余韻。</div>
+                <div class="desc-text">非常に重厚で魅惑的な食後酒。</div>
                 <div class="tags-row">
                     <span class="pill">ブランデー</span>
                     <span class="pill">ショート</span>
@@ -4749,7 +4744,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">カシスリキュール, オレンジジュース</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">鉄板の甘酸っぱい定番。</div>
+                <div class="desc-text">甘酸っぱさとオレンジの相性は鉄板。</div>
                 <div class="tags-row">
                     <span class="pill">リキュール</span>
                     <span class="pill">ロング</span>
@@ -4773,7 +4768,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">カンパリ, グレープフルーツ, トニック</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">完璧な三角形を描く食前酒。</div>
+                <div class="desc-text">完璧な三角形を描く一杯。</div>
                 <div class="tags-row">
                     <span class="pill">リキュール</span>
                     <span class="pill">ロング</span>
@@ -4821,7 +4816,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ピーチリキュール, オレンジジュース</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">優しくフルーティー。</div>
+                <div class="desc-text">フルーティーで万人受け。</div>
                 <div class="tags-row">
                     <span class="pill">リキュール</span>
                     <span class="pill">ロング</span>
@@ -4869,7 +4864,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">カルーア, 牛乳</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">カフェオレのような飲みやすさ。</div>
+                <div class="desc-text">アイスカフェオレのような味わい。</div>
                 <div class="tags-row">
                     <span class="pill">リキュール</span>
                     <span class="pill">ロング</span>
@@ -4893,7 +4888,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">カンパリ, ソーダ</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">大人のイタリアン清涼剤。</div>
+                <div class="desc-text">大人の清涼剤。</div>
                 <div class="tags-row">
                     <span class="pill">リキュール</span>
                     <span class="pill">ロング</span>
@@ -4917,7 +4912,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">マリブ, コーラ</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">ココナッツが香るカジュアルな一杯。</div>
+                <div class="desc-text">ココナッツの甘い香りとコーラ。</div>
                 <div class="tags-row">
                     <span class="pill">リキュール</span>
                     <span class="pill">ロング</span>
@@ -4941,7 +4936,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">アペロール, プロセッコ, ソーダ, オレンジ</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">イタリアの夕暮れの定番。</div>
+                <div class="desc-text">イタリアの夕暮れ時の定番。</div>
                 <div class="tags-row">
                     <span class="pill">リキュール</span>
                     <span class="pill">ロング</span>
@@ -4965,7 +4960,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ピーチリキュール, ウーロン茶</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">仙台発祥「ピーチウーロン」。</div>
+                <div class="desc-text">仙台発祥。ピーチウーロン。</div>
                 <div class="tags-row">
                     <span class="pill">リキュール</span>
                     <span class="pill">ロング</span>
@@ -4986,10 +4981,10 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
                     <span class="name-en">Ditaoni</span>
                 </div>
             </div>
-            <div class="materials-preview">ディタ（ライチ）, GFJ, トニック</div>
+            <div class="materials-preview">ライチリキュール, GFJ, トニック</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">ライチの風味が際立つ。</div>
+                <div class="desc-text">ライチの風味が際立ちます。</div>
                 <div class="tags-row">
                     <span class="pill">リキュール</span>
                     <span class="pill">ロング</span>
@@ -5037,7 +5032,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">カシスリキュール, トニックウォーター</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">トニックが引き締める。</div>
+                <div class="desc-text">カシスの甘みをトニックが引き締める。</div>
                 <div class="tags-row">
                     <span class="pill">リキュール</span>
                     <span class="pill">ロング</span>
@@ -5061,7 +5056,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ピーチリキュール, トニックウォーター</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">軽やかな桃のロング。</div>
+                <div class="desc-text">軽やかなロングカクテル。</div>
                 <div class="tags-row">
                     <span class="pill">リキュール</span>
                     <span class="pill">ロング</span>
@@ -5085,7 +5080,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">スーズ, トニックウォーター</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">独特の土っぽい苦味が癖になる。</div>
+                <div class="desc-text">独特の土っぽい苦味が癖になります。</div>
                 <div class="tags-row">
                     <span class="pill">リキュール</span>
                     <span class="pill">ロング</span>
@@ -5109,7 +5104,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">シャルトリューズ, トニック</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">ハーブ香る贅沢な一杯。</div>
+                <div class="desc-text">ハーブ香る贅沢なロング。</div>
                 <div class="tags-row">
                     <span class="pill">リキュール</span>
                     <span class="pill">ロング</span>
@@ -5133,7 +5128,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">パッソア, トニックウォーター</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">トロピカルな酸味。</div>
+                <div class="desc-text">トロピカルな酸味が特徴。</div>
                 <div class="tags-row">
                     <span class="pill">リキュール</span>
                     <span class="pill">ロング</span>
@@ -5154,7 +5149,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
                     <span class="name-en">Midorioni</span>
                 </div>
             </div>
-            <div class="materials-preview">ミドリ, GFJ, トニック</div>
+            <div class="materials-preview">メロンリキュール, GFJ, トニック</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
                 <div class="desc-text">メロンの甘みと苦味が調和。</div>
@@ -5205,7 +5200,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">スロージン, アプリコットブランデー, レモン</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">喜劇王の名を冠した甘酸っぱい味。</div>
+                <div class="desc-text">甘酸っぱさが魅力です。</div>
                 <div class="tags-row">
                     <span class="pill">リキュール</span>
                     <span class="pill">ショート</span>
@@ -5229,7 +5224,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">カンパリ, スイートベルモット, ソーダ</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">ボンドが最初に注文した酒。</div>
+                <div class="desc-text">ネグローニの原型。</div>
                 <div class="tags-row">
                     <span class="pill">リキュール</span>
                     <span class="pill">ロング</span>
@@ -5253,7 +5248,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">アドヴォカート, ライムジュース, ソーダ</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">雪玉のように白くまろやか。</div>
+                <div class="desc-text">まろやかで優しい味。</div>
                 <div class="tags-row">
                     <span class="pill">リキュール</span>
                     <span class="pill">ロング</span>
@@ -5325,7 +5320,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">カンパリ, オレンジジュース</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">イタリアの名作「ガリバルディ」。</div>
+                <div class="desc-text">苦味と甘酸っぱさの調和。</div>
                 <div class="tags-row">
                     <span class="pill">リキュール</span>
                     <span class="pill">ロング</span>
@@ -5373,7 +5368,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">アマレット, レモン, 卵白</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">お菓子のような風味が楽しめる。</div>
+                <div class="desc-text">お菓子のような風味。</div>
                 <div class="tags-row">
                     <span class="pill">リキュール</span>
                     <span class="pill">ショート</span>
@@ -5397,7 +5392,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ガリアーノ, ホワイトカカオ, 生クリーム</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">黄金色の高級デザート。</div>
+                <div class="desc-text">リッチなデザートカクテル。</div>
                 <div class="tags-row">
                     <span class="pill">リキュール</span>
                     <span class="pill">ショート</span>
@@ -5493,7 +5488,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">赤ワイン, ジンジャーエール</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">渋みが和らいだ「子猫」。</div>
+                <div class="desc-text">渋みが和らいだカクテル。</div>
                 <div class="tags-row">
                     <span class="pill">ワイン</span>
                     <span class="pill">ロング</span>
@@ -5565,7 +5560,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">シャンパン, オレンジジュース</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">贅沢なブランチの定番。</div>
+                <div class="desc-text">優雅なブランチの定番。</div>
                 <div class="tags-row">
                     <span class="pill">ワイン</span>
                     <span class="pill">ロング</span>
@@ -5637,7 +5632,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">シャンパン, カシスリキュール</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">より華やかで祝祭感のある一杯。</div>
+                <div class="desc-text">より華やかな贅沢な一杯。</div>
                 <div class="tags-row">
                     <span class="pill">ワイン</span>
                     <span class="pill">ロング</span>
@@ -5757,7 +5752,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">赤ワイン, レモンソーダ</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">「夏の赤ワイン」スペインの定番。</div>
+                <div class="desc-text">夏の赤ワイン。</div>
                 <div class="tags-row">
                     <span class="pill">ワイン</span>
                     <span class="pill">ロング</span>
@@ -5877,7 +5872,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ビール, レモンソーダ</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">フランスで人気の軽快な一杯。</div>
+                <div class="desc-text">軽快で爽快な一杯。</div>
                 <div class="tags-row">
                     <span class="pill">ビール</span>
                     <span class="pill">ロング</span>
@@ -5901,7 +5896,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ビール, カンパリ</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">ハーブ香が深みを与える。</div>
+                <div class="desc-text">ほろ苦さが加わり深みが出ます。</div>
                 <div class="tags-row">
                     <span class="pill">ビール</span>
                     <span class="pill">ロング</span>
@@ -5925,7 +5920,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ビール, ライム, 塩, タバスコ</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">メキシコの国民的スパイシービール。</div>
+                <div class="desc-text">メキシコのスパイシービール。</div>
                 <div class="tags-row">
                     <span class="pill">ビール</span>
                     <span class="pill">ロング</span>
@@ -5949,7 +5944,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ビール, コーラ</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">黒い液体が燃料に見えることから。</div>
+                <div class="desc-text">苦味が消えて非常に飲みやすい。</div>
                 <div class="tags-row">
                     <span class="pill">ビール</span>
                     <span class="pill">ロング</span>
@@ -5973,7 +5968,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">スタウト, シャンパン</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">ベルベットのように滑らかな高貴な酒。</div>
+                <div class="desc-text">滑らかで高貴な酒。</div>
                 <div class="tags-row">
                     <span class="pill">ビール</span>
                     <span class="pill">ロング</span>
@@ -6021,7 +6016,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ビール, カシスリキュール</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">見た目も美しいカクテル。</div>
+                <div class="desc-text">見た目も美しい。</div>
                 <div class="tags-row">
                     <span class="pill">ビール</span>
                     <span class="pill">ロング</span>
@@ -6069,7 +6064,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">日本酒, ジン, オリーブ</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">欧米でも人気のモダンクラシック。</div>
+                <div class="desc-text">ジャパニーズ・モダン・クラシック。</div>
                 <div class="tags-row">
                     <span class="pill">日本酒</span>
                     <span class="pill">ショート</span>
@@ -6141,7 +6136,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">日本酒, カルピス</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">発酵食品同士の相性が抜群。</div>
+                <div class="desc-text">まろやかで優しい味わい。</div>
                 <div class="tags-row">
                     <span class="pill">日本酒</span>
                     <span class="pill">ロング</span>
@@ -6189,7 +6184,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">日本酒, ビール</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">パーティードリンクの定番。</div>
+                <div class="desc-text">海外で人気のパーティードリンク。</div>
                 <div class="tags-row">
                     <span class="pill">日本酒</span>
                     <span class="pill">ロング</span>
@@ -6237,7 +6232,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ジンジャーエール, グレナデン</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">往年の名子役の名を冠した定番。</div>
+                <div class="desc-text">可愛らしいノンアルコールの代表。</div>
                 <div class="tags-row">
                     <span class="pill">ノンアルコール</span>
                     <span class="pill">ロング</span>
@@ -6309,7 +6304,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">オレンジ, パイン, レモン</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">魔法の味の満足感。</div>
+                <div class="desc-text">3種のジュースの魔法の味。</div>
                 <div class="tags-row">
                     <span class="pill">ノンアルコール</span>
                     <span class="pill">ショート</span>
@@ -6405,7 +6400,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">アイスティー, レモン</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">レモネードとアイスティーのミックス。</div>
+                <div class="desc-text">アイスティーとレモネード。</div>
                 <div class="tags-row">
                     <span class="pill">ノンアルコール</span>
                     <span class="pill">ロング</span>
@@ -6453,7 +6448,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">クランベリー, ラズベリー</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">デザート感覚で楽しめる。</div>
+                <div class="desc-text">デザート感覚。</div>
                 <div class="tags-row">
                     <span class="pill">ノンアルコール</span>
                     <span class="pill">ショート</span>
@@ -6501,7 +6496,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">ライム, グレナデン, ソーダ</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">「夏の喜び」爽快な一杯。</div>
+                <div class="desc-text">夏の昼下がりに最適。</div>
                 <div class="tags-row">
                     <span class="pill">ノンアルコール</span>
                     <span class="pill">ロング</span>
@@ -6549,7 +6544,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">パイン, ココナッツミルク</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">濃厚なココナッツとパイン。</div>
+                <div class="desc-text">南国の休日気分。</div>
                 <div class="tags-row">
                     <span class="pill">ノンアルコール</span>
                     <span class="pill">ロング</span>
@@ -6573,7 +6568,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             <div class="materials-preview">レモン, 砂糖, ソーダ</div>
             <div class="card-details">
                 <div class="detail-label">PROFILE</div>
-                <div class="desc-text">バーの本気レモンスカッシュ。</div>
+                <div class="desc-text">バーの本気の清涼感。</div>
                 <div class="tags-row">
                     <span class="pill">ノンアルコール</span>
                     <span class="pill">ロング</span>
@@ -6597,483 +6592,5 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
         </div>
     </div>
 
-<script>
-// --- FULL COCKTAIL DATA (229 Items Restored & Expanded) ---
-const rawCocktails = [
-    // --- GIN (41 items) ---
-    { id: 'g1', base: 'ジン', styles: ['ロング', 'トニック', '炭酸'], flavors: ['苦味', 'さっぱり', '柑橘'], jp: 'ジントニック', en: 'Gin and Tonic', materials: 'ジン, トニックウォーター, ライム', desc: 'バーの定番中の定番。元々は熱帯植民地でマラリア予防薬「キニーネ」を飲みやすくするために考案されたのが始まり。お店ごとのジンの銘柄やライムの扱いの違いを楽しめます。' },
-    { id: 'g2', base: 'ジン', styles: ['ロング', '炭酸', 'ジュース'], flavors: ['柑橘', 'さっぱり'], jp: 'ジンフィズ', en: 'Gin Fizz', materials: 'ジン, レモン, 砂糖, ソーダ', desc: 'レモンの酸味と炭酸の弾ける音が爽快な一杯。シンプルですが、シェイクの技術で泡立ちや口当たりが劇的に変わるため、バーテンダーの腕試しとも言われます。' },
-    { id: 'g3', base: 'ジン', styles: ['ロング', '炭酸'], flavors: ['さっぱり', '柑橘', 'ドライ'], jp: 'ジンリッキー', en: 'Gin Rickey', materials: 'ジン, ライム, ソーダ', desc: '19世紀末、ワシントンのロビイスト、ジョー・リッキー氏が愛飲したスタイル。砂糖を使わず、ライムとソーダのみで仕上げる極めてドライで潔い味わいです。' },
-    { id: 'g4', base: 'ジン', styles: ['ショート', 'シェイク'], flavors: ['柑橘', 'さっぱり', 'ドライ'], jp: 'ギムレット', en: 'Gimlet', materials: 'ジン, ライムジュース, 砂糖', desc: '「ギムレットには早すぎる」という『長いお別れ』の名台詞で不朽の名作に。元々は英国海軍軍医が将校の健康維持のためにジンにライムを混ぜたのが始まりです。' },
-    { id: 'g5', base: 'ジン', styles: ['ショート', 'シェイク'], flavors: ['柑橘', '甘め'], jp: 'ホワイトレディ', en: 'White Lady', materials: 'ジン, ホワイトキュラソー, レモン', desc: '「白い貴婦人」。ジンのキレ、キュラソーの甘み、レモンの酸味が一体となった、洗練された乳白色のカクテル。サイドカーやバラライカの兄弟カクテルです。' },
-    { id: 'g6', base: 'ジン', styles: ['ショート', 'ステア', 'ストレート'], flavors: ['ドライ', 'ハーブ / ミント'], jp: 'マティーニ', en: 'Martini', materials: 'ジン, ドライベルモット, オリーブ', desc: '「カクテルの王様」。ジンとベルモットの比率には無数の議論があり、チャーチル首相はベルモットの瓶を横目に見ながらジンを飲んだという逸話も残っています。' },
-    { id: 'g7', base: 'ジン', styles: ['ロング', 'シェイク', '炭酸'], flavors: ['甘め', 'フルーティ'], jp: 'シンガポールスリング', en: 'Singapore Sling', materials: 'ジン, チェリーブランデー, レモン, ソーダ等', desc: '1915年、ラッフルズ・ホテルで誕生。「東洋の神秘」と称される夕焼けのような美しい色合いと、フルーティーで複雑な味わいが特徴の南国カクテルです。' },
-    { id: 'g8', base: 'ジン', styles: ['ショート', 'ロック', 'ビルド'], flavors: ['苦味', '甘め', 'ハーブ / ミント'], jp: 'ネグローニ', en: 'Negroni', materials: 'ジン, カンパリ, スイートベルモット', desc: 'フィレンツェのネグローニ伯爵が好んだ食前酒。カンパリの苦味とベルモットの甘みが重厚に絡み合います。近年、世界的に人気が再燃しているクラシックの一つです。' },
-    { id: 'g9', base: 'ジン', styles: ['ロング', 'ジュース'], flavors: ['柑橘', 'さっぱり'], jp: 'オレンジブロッサム', en: 'Orange Blossom', materials: 'ジン, オレンジジュース', desc: 'オレンジの花言葉は「純粋」。禁酒法時代に粗悪なジンの味を隠すために生まれたとも言われますが、現在は結婚式の乾杯酒としても振る舞われる華やかな一杯です。' },
-    { id: 'g10', base: 'ジン', styles: ['ショート', 'シェイク'], flavors: ['甘め', 'フルーティ'], jp: 'ブルームーン', en: 'Blue Moon', materials: 'ジン, パルフェタムール, レモン', desc: '「完全なる愛」という名のスミレのリキュールを使用した、神秘的な紫色のカクテル。一方で「Blue Moon」には「できない相談」という意味もあり、ミステリアスです。' },
-    { id: 'g11', base: 'ジン', styles: ['ショート', 'シェイク'], flavors: ['フルーティ', '柑橘', '甘め'], jp: 'アビエーション', en: 'Aviation', materials: 'ジン, マラスキーノ, レモン, パルフェタムール', desc: '「飛行機」。空のような薄紫色が美しいクラシックカクテル。航空機がまだ珍しく、空への憧れが強かった20世紀初頭に生まれました。' },
-    { id: 'g12', base: 'ジン', styles: ['ショート', 'シェイク'], flavors: ['ハーブ / ミント', '柑橘', '甘め'], jp: 'ラストワード', en: 'Last Word', materials: 'ジン, シャルトリューズ緑, マラスキーノ, ライム', desc: '禁酒法時代のデトロイトで生まれた名作。強烈なハーブ香が魅力。' },
-    { id: 'g13', base: 'ジン', styles: ['ショート', 'シェイク'], flavors: ['甘め', '柑橘'], jp: 'ビーズニーズ', en: 'Bee\'s Knees', materials: 'ジン, 蜂蜜, レモンジュース', desc: '「蜂の膝」＝「最高のもの」というスラングから。' },
-    { id: 'g14', base: 'ジン', styles: ['ショート', 'シェイク'], flavors: ['柑橘', 'さっぱり'], jp: 'コープスリバイバーNo.2', en: 'Corpse Reviver #2', materials: 'ジン, コアントロー, リレブラン, レモン, アブサン', desc: '「死者を蘇らせるもの」。かつては二日酔いの迎え酒として考案されました。' },
-    { id: 'g15', base: 'ジン', styles: ['ロング', 'シェイク', '炭酸'], flavors: ['柑橘', 'さっぱり'], jp: 'フレンチ75', en: 'French 75', materials: 'ジン, レモン, 砂糖, シャンパン', desc: '第一次世界大戦時のフランス軍の大砲「75mm砲」に由来。' },
-    { id: 'g16', base: 'ジン', styles: ['ロング', '炭酸'], flavors: ['柑橘', '甘め', 'さっぱり'], jp: 'トムコリンズ', en: 'Tom Collins', materials: 'オールドトムジン, レモン, 砂糖, ソーダ', desc: '19世紀ロンドンの伝説的ウェイター、ジョン・コリンズに由来。' },
-    { id: 'g17', base: 'ジン', styles: ['ショート', 'シェイク'], flavors: ['フルーティ', '柑橘'], jp: 'ブロンクス', en: 'Bronx', materials: 'ジン, ドライベルモット, スイートベルモット, オレンジ', desc: 'マティーニにオレンジジュースを加えたようなフルーティーな食前酒。' },
-    { id: 'g18', base: 'ジン', styles: ['ショート', 'シェイク'], flavors: ['ハーブ / ミント', 'ドライ'], jp: 'アラスカ', en: 'Alaska', materials: 'ジン, シャルトリューズイエロー', desc: 'ジンとシャルトリューズのみで作る、冷たく鋭い黄金色の一杯。' },
-    { id: 'g19', base: 'ジン', styles: ['ショート', 'シェイク', 'ステア'], flavors: ['ドライ', '柑橘', 'ハーブ / ミント'], jp: 'ヴェスパー', en: 'Vesper', materials: 'ジン, ウォッカ, リレ・ブラン', desc: '『007』でジェームズ・ボンドが注文したオリジナル・マティーニ。' },
-    { id: 'g20', base: 'ジン', styles: ['ショート', 'ステア'], flavors: ['ドライ', '塩味', 'ハーブ / ミント'], jp: 'ギブソン', en: 'Gibson', materials: 'ジン, ドライベルモット, パールオニオン', desc: 'マティーニのオリーブをパールオニオンに変えたもの。' },
-    { id: 'g21', base: 'ジン', styles: ['ショート', 'シェイク'], flavors: ['甘め', 'フルーティ', 'クリーミー'], jp: 'ピンクレディ', en: 'Pink Lady', materials: 'ジン, グレナデンシロップ, 卵白', desc: '卵白による優しい口当たりと愛らしいピンク色が特徴。' },
-    { id: 'g22', base: 'ジン', styles: ['ショート', 'シェイク'], flavors: ['フルーティ', '甘め'], jp: 'パラダイス', en: 'Paradise', materials: 'ジン, アプリコットブランデー, オレンジジュース', desc: '「楽園」の名にふさわしい、フルーティーで飲みやすいカクテル。' },
-    { id: 'g23', base: 'ジン', styles: ['ショート', 'ロック', 'ビルド'], flavors: ['甘め', 'フルーティ', 'ハーブ / ミント'], jp: 'ブランブル', en: 'Bramble', materials: 'ジン, レモン, 砂糖, ブラックベリーリキュール', desc: '1980年代ロンドン発のモダンクラシック。ベリーの茂みを表現。' },
-    { id: 'g24', base: 'ジン', styles: ['ショート', 'シェイク'], flavors: ['フルーティ', '甘め', 'クリーミー'], jp: 'クローバークラブ', en: 'Clover Club', materials: 'ジン, ラズベリーシロップ, レモン, 卵白', desc: 'ラズベリーと卵白が生み出す美しいピンク色と滑らかなテクスチャー。' },
-    { id: 'g25', base: 'ジン', styles: ['ショート', 'シェイク'], flavors: ['ハーブ / ミント', 'さっぱり', '柑橘'], jp: 'サウスサイド', en: 'Southside', materials: 'ジン, ライム, 砂糖, ミント', desc: '「ジンのモヒート」とも言える一杯。' },
-    { id: 'g26', base: 'ジン', styles: ['ショート', 'シェイク'], flavors: ['ハーブ / ミント', 'フルーティ'], jp: 'モンキーグランド', en: 'Monkey Gland', materials: 'ジン, オレンジ, グレナデン, アブサン', desc: '1920年代パリで考案。味はフルーティーで美味です。' },
-    { id: 'g27', base: 'ジン', styles: ['ショート', 'シェイク'], flavors: ['フルーティ', '柑橘'], jp: 'カジノ', en: 'Casino', materials: 'オールドトムジン, マラスキーノ, レモン, ビターズ', desc: '甘口のオールドトムジンを使用し、チェリーリキュールで風味付け。' },
-    { id: 'g28', base: 'ジン', styles: ['ロング', 'ビルド'], flavors: ['甘め', '柑橘'], jp: 'ロングアイランドアイスティー', en: 'Long Island Iced Tea', materials: 'ジン, ウォッカ, ラム, テキーラ, コーラ', desc: '紅茶を使わずにアイスティーを再現した魔法のカクテル。' },
-    { id: 'g29', base: 'ジン', styles: ['ショート', 'シェイク'], flavors: ['柑橘', '苦味', 'さっぱり'], jp: 'ペグクラブ', en: 'Pegu Club', materials: 'ジン, オレンジキュラソー, ライム, ビターズ', desc: '19世紀ミャンマーの英国将校クラブのシグネチャー。' },
-    { id: 'g30', base: 'ジン', styles: ['ロング', '炭酸'], flavors: ['さっぱり', '柑橘'], jp: 'ジンバック', en: 'Gin Buck', materials: 'ジン, レモン, ジンジャーエール', desc: 'ジンのボタニカルとジンジャーエールの刺激が心地よい。' },
-    { id: 'g31', base: 'ジン', styles: ['ロング', 'ジュース'], flavors: ['さっぱり', '柑橘', '塩味'], jp: 'ソルティドッグ(ジン)', en: 'Salty Dog (Gin)', materials: 'ジン, グレープフルーツ, 塩', desc: '本来ソルティドッグはジンベースで英国生まれ。' },
-    { id: 'g32', base: 'ジン', styles: ['ロング', 'トニック', '炭酸'], flavors: ['さっぱり', '柑橘'], jp: 'ジンソニック', en: 'Gin Sonic', materials: 'ジン, トニック, ソーダ, ライム', desc: 'トニックとソーダを半々で割るスタイル。' },
-    { id: 'g33', base: 'ジン', styles: ['ショート', 'シェイク'], flavors: ['柑橘', 'さっぱり', '甘め'], jp: 'ブルドッグ(ハイボール)', en: 'Bulldog Highball', materials: 'ジン, オレンジジュース, ジンジャーエール', desc: 'ジンにオレンジとジンジャーエールを合わせた古いレシピ。' },
-    { id: 'g34', base: 'ジン', styles: ['ショート', 'シェイク'], flavors: ['甘め', '柑橘', 'フルーティ'], jp: 'パリジャン', en: 'Parisian', materials: 'ジン, ドライベルモット, カシス', desc: 'マティーニにカシスを加えた、深紅の美しいカクテル。' },
-    { id: 'g35', base: 'ジン', styles: ['ショート', 'シェイク'], flavors: ['甘め', '柑橘'], jp: 'ブルーレディ', en: 'Blue Lady', materials: 'ジン, ブルーキュラソー, レモン', desc: 'ホワイトレディを鮮やかな青色にしたもの。' },
-    { id: 'g36', base: 'ジン', styles: ['ショート', 'シェイク'], flavors: ['さっぱり', '柑橘'], jp: 'ハワイアン', en: 'Hawaiian', materials: 'ジン, オレンジキュラソー, パイン', desc: 'パイナップルジュースを使い、南国風に仕上げたショート。' },
-    { id: 'g37', base: 'ジン', styles: ['ロング', 'ジュース'], flavors: ['さっぱり', '柑橘'], jp: 'グレープフルーツハイボール', en: 'Greyhound (Gin)', materials: 'ジン, グレープフルーツジュース', desc: 'ジンとグレープフルーツの相性は抜群。' },
-    { id: 'g38', base: 'ジン', styles: ['ロング', '炭酸'], flavors: ['さっぱり', '柑橘'], jp: 'ジンライムソーダ', en: 'Gin Lime Soda', materials: 'ジン, ライム, ソーダ', desc: 'ジンリッキーの別称に近いが、よりライムを強調。' },
-    { id: 'g39', base: 'ジン', styles: ['ショート', 'ステア'], flavors: ['甘め', 'ハーブ / ミント', 'ドライ'], jp: 'マルチネス', en: 'Martinez', materials: 'ジン, スイートベルモット, マラスキーノ, ビターズ', desc: 'マティーニの原型といわれる歴史的一杯。オールドトムジンを使うのが伝統的。' },
-    { id: 'g40', base: 'ジン', styles: ['ショート', 'ステア'], flavors: ['苦味', 'ハーブ / ミント', '甘め'], jp: 'ハンキーパンキー', en: 'Hanky Panky', materials: 'ジン, スイートベルモット, フェルネットブランカ', desc: 'サヴォイ・ホテルの伝説的バーテンダー、エイダ・コールマンが考案。' },
-    { id: 'g41', base: 'ジン', styles: ['ショート', 'ステア'], flavors: ['ハーブ / ミント', '甘め'], jp: 'ビジュ', en: 'Bijou', materials: 'ジン, スイートベルモット, シャルトリューズ緑', desc: '「宝石」を意味する名作。3つの色が複雑に重なり合う贅沢な一杯。' },
 
-    // --- VODKA (30 items) ---
-    { id: 'v1', base: 'ウォッカ', styles: ['ロング', '炭酸'], flavors: ['スパイシー', 'さっぱり', '柑橘'], jp: 'モスコミュール', en: 'Moscow Mule', materials: 'ウォッカ, ライム, ジンジャーエール', desc: '「モスクワのラバ」。ウォッカとジンジャービアの傑作。' },
-    { id: 'v2', base: 'ウォッカ', styles: ['ロング', 'ジュース'], flavors: ['柑橘', '甘め'], jp: 'スクリュードライバー', en: 'Screwdriver', materials: 'ウォッカ, オレンジジュース', desc: '工具のねじ回しでステアしたのが由来。' },
-    { id: 'v3', base: 'ウォッカ', styles: ['ロング', 'ジュース', 'ロック'], flavors: ['塩味', '柑橘'], jp: 'ソルティドッグ', en: 'Salty Dog', materials: 'ウォッカ, グレープフルーツジュース, 塩', desc: 'グラス縁の塩とグレープフルーツの苦味がベストマッチ。' },
-    { id: 'v4', base: 'ウォッカ', styles: ['ロング', 'ジュース'], flavors: ['スパイシー', '野菜 / トマト'], jp: 'ブラッディメアリー', en: 'Bloody Mary', materials: 'ウォッカ, トマトジュース, レモン, 香辛料', desc: '香辛料で味付けする「飲むサラダ」。' },
-    { id: 'v5', base: 'ウォッカ', styles: ['ショート', 'シェイク'], flavors: ['さっぱり', '柑橘', 'ドライ'], jp: 'カミカゼ', en: 'Kamikaze', materials: 'ウォッカ, ホワイトキュラソー, ライム', desc: '鋭い切れ味のカクテル。ライムの酸味が全体を引き締めます。' },
-    { id: 'v6', base: 'ウォッカ', styles: ['ショート', 'シェイク'], flavors: ['柑橘', 'さっぱり'], jp: 'バラライカ', en: 'Balalaika', materials: 'ウォッカ, ホワイトキュラソー, レモン', desc: 'サイドカーのベースをウォッカに変えたもの。' },
-    { id: 'v7', base: 'ウォッカ', styles: ['ショート', 'シェイク'], flavors: ['フルーティ', '甘め', '柑橘'], jp: 'コスモポリタン', en: 'Cosmopolitan', materials: 'ウォッカ, ホワイトキュラソー, クランベリー, ライム', desc: 'ドラマ『SATC』で大ブレイク。' },
-    { id: 'v8', base: 'ウォッカ', styles: ['ショート', 'ロック'], flavors: ['甘め', '苦味', 'コーヒー / ナッツ'], jp: 'ブラックルシアン', en: 'Black Russian', materials: 'ウォッカ, コーヒーリキュール', desc: 'コーヒーの甘さとウォッカの強さが溶け合う。' },
-    { id: 'v9', base: 'ウォッカ', styles: ['ロング', 'ビルド'], flavors: ['甘め', 'スパイシー'], jp: 'モスコミュール(辛口)', en: 'Moscow Mule (Dry)', materials: 'ウォッカ, ライム, 辛口ジンジャーエール', desc: '辛口ジンジャーエールを使用した、より刺激的な一杯。' },
-    { id: 'v10', base: 'ウォッカ', styles: ['ショート', 'シェイク'], flavors: ['甘め', 'フルーティ', 'トロピカル'], jp: 'セックスオンザビーチ', en: 'Sex on the Beach', materials: 'ウォッカ, メロンリキュール, フランボワーズ, パイン', desc: '映画『カクテル』で有名に。' },
-    { id: 'v11', base: 'ウォッカ', styles: ['ショート', 'シェイク'], flavors: ['苦味', '甘め', 'コーヒー / ナッツ'], jp: 'エスプレッソマティーニ', en: 'Espresso Martini', materials: 'ウォッカ, エスプレッソ, コーヒーリキュール, シロップ', desc: '近年世界的大流行のモダンクラシック。' },
-    { id: 'v12', base: 'ウォッカ', styles: ['ショート', 'ロック'], flavors: ['甘め', 'クリーミー', 'コーヒー / ナッツ'], jp: 'ホワイトルシアン', en: 'White Russian', materials: 'ウォッカ, コーヒーリキュール, 生クリーム', desc: 'ブラックルシアンに生クリームをフロート。' },
-    { id: 'v13', base: 'ウォッカ', styles: ['ショート', 'ロック'], flavors: ['甘め', 'コーヒー / ナッツ'], jp: 'ゴッドマザー', en: 'Godmother', materials: 'ウォッカ, アマレット', desc: 'ゴッドファーザーのウォッカ版。' },
-    { id: 'v14', base: 'ウォッカ', styles: ['ロング', 'ジュース'], flavors: ['フルーティ', '柑橘', 'さっぱり'], jp: 'シーブリーズ', en: 'Sea Breeze', materials: 'ウォッカ, クランベリージュース, グレープフルーツ', desc: '「海のそよ風」。爽やかな酸味のロングカクテル。' },
-    { id: 'v15', base: 'ウォッカ', styles: ['ロング', 'ジュース', 'シェイク'], flavors: ['トロピカル', '甘め', 'クリーミー'], jp: 'チチ', en: 'Chi-Chi', materials: 'ウォッカ, パイナップルジュース, ココナッツミルク', desc: 'ピニャコラーダのウォッカ版。' },
-    { id: 'v16', base: 'ウォッカ', styles: ['ロング', 'トニック', '炭酸'], flavors: ['さっぱり', '柑橘'], jp: 'ウォッカトニック', en: 'Vodka Tonic', materials: 'ウォッカ, トニックウォーター, ライム', desc: 'シンプルかつ清涼感あふれる一杯。' },
-    { id: 'v17', base: 'ウォッカ', styles: ['ロング', '炭酸'], flavors: ['柑橘', 'さっぱり', '甘め'], jp: 'ブルーラグーン', en: 'Blue Lagoon', materials: 'ウォッカ, ブルーキュラソー, レモン, ソーダ', desc: '鮮やかな青色が美しいパリ生まれのカクテル。' },
-    { id: 'v18', base: 'ウォッカ', styles: ['ロング', 'ビルド'], flavors: ['甘め', 'ハーブ / ミント', '柑橘'], jp: 'ハーベイウォールバンガー', en: 'Harvey Wallbanger', materials: 'ウォッカ, オレンジジュース, ガリアーノ', desc: 'スクリュードライバーにガリアーノをフロート。' },
-    { id: 'v19', base: 'ウォッカ', styles: ['ロング', 'ビルド'], flavors: ['フルーティ', 'さっぱり', '柑橘'], jp: 'ケープコッダー', en: 'Cape Codder', materials: 'ウォッカ, クランベリージュース, ライム', desc: 'ウォッカのクランベリー割り。' },
-    { id: 'v20', base: 'ウォッカ', styles: ['ロング', 'ジュース'], flavors: ['柑橘', 'さっぱり'], jp: 'グレイハウンド', en: 'Greyhound', materials: 'ウォッカ, グレープフルーツジュース', desc: 'ソルティドッグから塩を抜いたもの。' },
-    { id: 'v21', base: 'ウォッカ', styles: ['ショート', 'シェイク'], flavors: ['甘め', '柑橘'], jp: 'レモンドロップ', en: 'Lemon Drop', materials: 'シトラスウォッカ, レモン, 砂糖', desc: '甘酸っぱいレモンキャンディのようなカクテル。' },
-    { id: 'v22', base: 'ウォッカ', styles: ['ショート', 'シェイク'], flavors: ['フルーティ', '甘め'], jp: 'アップルマティーニ', en: 'Appletini', materials: 'ウォッカ, アップルリキュール, レモン', desc: 'NYで大流行したモダンマティーニ。' },
-    { id: 'v23', base: 'ウォッカ', styles: ['ショート', 'シェイク'], flavors: ['甘め', 'クリーミー', 'コーヒー / ナッツ'], jp: 'バーバラ', en: 'Barbara', materials: 'ウォッカ, カカオリキュール, 生クリーム', desc: 'アレキサンダーのベースをウォッカに変えたもの。' },
-    { id: 'v24', base: 'ウォッカ', styles: ['ロング', 'ビルド'], flavors: ['塩味', '野菜 / トマト'], jp: 'ブルショット', en: 'Bull Shot', materials: 'ウォッカ, ビーフブイヨン, レモン, 香辛料', desc: '冷たいコンソメスープにウォッカを加えた異色作。' },
-    { id: 'v25', base: 'ウォッカ', styles: ['ロング', '炭酸'], flavors: ['さっぱり', '柑橘'], jp: 'ウォッカコリンズ', en: 'Vodka Collins', materials: 'ウォッカ, レモン, 砂糖, ソーダ', desc: 'トムコリンズのベースをウォッカに変えたもの。' },
-    { id: 'v26', base: 'ウォッカ', styles: ['ロング', '炭酸'], flavors: ['さっぱり', '柑橘'], jp: 'ウォッカリッキー', en: 'Vodka Rickey', materials: 'ウォッカ, ライム, ソーダ', desc: '砂糖を使わないドライな味わい。' },
-    { id: 'v27', base: 'ウォッカ', styles: ['ショート', 'シェイク'], flavors: ['甘め', '柑橘'], jp: 'スレッジハンマー', en: 'Sledgehammer', materials: 'ウォッカ, ライムジュース', desc: '「大型ハンマー」の意味。パンチの効いた味わい。' },
-    { id: 'v28', base: 'ウォッカ', styles: ['ロング', 'ジュース'], flavors: ['甘め', 'フルーティ'], jp: 'マドラス', en: 'Madras', materials: 'ウォッカ, クランベリー, オレンジ', desc: '鮮やかな色合いがマドラスチェックを思わせる。' },
-    { id: 'v29', base: 'ウォッカ', styles: ['ロング', 'ジュース'], flavors: ['フルーティ', '甘め'], jp: 'ベイブリーズ', en: 'Bay Breeze', materials: 'ウォッカ, クランベリー, パイン', desc: '「ハワイアン・シーブリーズ」とも。' },
-    { id: 'v30', base: 'ウォッカ', styles: ['ショート', 'ステア'], flavors: ['ドライ', 'ハーブ / ミント'], jp: 'ウォッカマティーニ', en: 'Vodka Martini', materials: 'ウォッカ, ドライベルモット', desc: '「カンガルー」とも呼ばれるクリアなマティーニ。' },
-
-    // --- RUM (18 items) ---
-    { id: 'r1', base: 'ラム', styles: ['ロング', '炭酸', 'ビルド'], flavors: ['ハーブ / ミント', 'さっぱり'], jp: 'モヒート', en: 'Mojito', materials: 'ホワイトラム, ミント, ライム, 砂糖, ソーダ', desc: 'ヘミングウェイ愛飲。清涼感No.1カクテル。' },
-    { id: 'r2', base: 'ラム', styles: ['ショート', 'シェイク'], flavors: ['柑橘', '甘め'], jp: 'ダイキリ', en: 'Daiquiri', materials: 'ホワイトラム, ライム, 砂糖', desc: 'バーテンダーの実力が現れる「試金石」。' },
-    { id: 'r3', base: 'ラム', styles: ['ロング', '炭酸'], flavors: ['甘め', '柑橘'], jp: 'キューバリブレ', en: 'Cuba Libre', materials: 'ホワイトラム, コーラ, ライム', desc: '「キューバの自由万歳」。ラムとコーラの相性は抜群。' },
-    { id: 'r4', base: 'ラム', styles: ['ショート', 'シェイク'], flavors: ['柑橘', 'さっぱり'], jp: 'X.Y.Z', en: 'X.Y.Z', materials: 'ホワイトラム, ホワイトキュラソー, レモン', desc: '「最高の」一杯。' },
-    { id: 'r5', base: 'ラム', styles: ['ロング', 'シェイク', 'ジュース'], flavors: ['甘め', 'フルーティ', 'トロピカル', 'クリーミー'], jp: 'ピニャコラーダ', en: 'Pina Colada', materials: 'ホワイトラム, パインジュース, ココナッツミルク', desc: '濃厚なトロピカルカクテル。' },
-    { id: 'r6', base: 'ラム', styles: ['ロング', 'シェイク'], flavors: ['甘め', 'フルーティ', 'トロピカル'], jp: 'マイタイ', en: 'Mai-Tai', materials: 'ホワイトラム, ダークラム, オレンジキュラソー, ライム', desc: '「トロピカルカクテルの女王」。' },
-    { id: 'r7', base: 'ラム', styles: ['ロング', 'ジュース', '炭酸'], flavors: ['フルーティ', 'トロピカル'], jp: 'ブルーハワイ', en: 'Blue Hawaii', materials: 'ホワイトラム, ブルーキュラソー, パイン, レモン', desc: 'ハワイの海色が美しいカクテル。' },
-    { id: 'r8', base: 'ラム', styles: ['ロング', '炭酸'], flavors: ['さっぱり', '柑橘'], jp: 'ボストンクーラー', en: 'Boston Cooler', materials: 'ホワイトラム, レモン, 砂糖, ジンジャーエール', desc: 'ラムの甘みをレモンが爽快に引き立てる。' },
-    { id: 'r9', base: 'ラム', styles: ['ショート', 'シェイク'], flavors: ['甘め', 'フルーティ', 'クリーミー'], jp: 'ミリオンダラー', en: 'Million Dollar', materials: 'ラム, スイートベルモット, パイン, 卵白', desc: '横浜生まれの日本発世界的カクテル。' },
-    { id: 'r10', base: 'ラム', styles: ['ショート', 'シェイク'], flavors: ['甘め', '柑橘'], jp: 'スカイダイビング', en: 'Sky Diving', materials: 'ラム, ブルーキュラソー, ライム', desc: '澄み切った青空のような日本の名作。' },
-    { id: 'r11', base: 'ラム', styles: ['ロング', '炭酸', 'ビルド'], flavors: ['スパイシー', '甘め'], jp: 'ダーク＆ストーミー', en: 'Dark \'n\' Stormy', materials: 'ダークラム, ジンジャービア, ライム', desc: 'スパイシーなジンジャービアにラムをフロート。' },
-    { id: 'r12', base: 'ラム', styles: ['ロング', 'ジュース'], flavors: ['フルーティ', '甘め', 'トロピカル'], jp: 'プランターズパンチ', en: 'Planter\'s Punch', materials: 'ダークラム, オレンジ, レモン, グレナデン, ソーダ', desc: 'フルーツたっぷりで南国の香り。' },
-    { id: 'r13', base: 'ラム', styles: ['ショート', 'ロック'], flavors: ['苦味', '甘め', 'トロピカル'], jp: 'ジャングルバード', en: 'Jungle Bird', materials: 'ダークラム, カンパリ, パインジュース, ライム, 砂糖', desc: '苦味と甘みが融合したビター系トロピカル。' },
-    { id: 'r14', base: 'ラム', styles: ['ショート', 'シェイク'], flavors: ['柑橘', 'さっぱり'], jp: 'ヘミングウェイダイキリ', en: 'Hemingway Daiquiri', materials: 'ホワイトラム, マラスキーノ, GFJ, ライム', desc: '通称パパ・ダイキリ。ドライな味わい。' },
-    { id: 'r15', base: 'ラム', styles: ['ショート', 'ロック', 'ビルド'], flavors: ['柑橘', '甘め', 'トロピカル'], jp: 'カイピリーニャ', en: 'Caipirinha', materials: 'カシャッサ, ライム, 砂糖', desc: 'ブラジルの国民酒。ぶつ切りライムが野性的。' },
-    { id: 'r16', base: 'ラム', styles: ['ロング', 'トニック'], flavors: ['さっぱり', '柑橘'], jp: 'ラムトニック', en: 'Rum Tonic', materials: 'ホワイトラム, トニックウォーター, ライム', desc: '甘い香りをトニックの苦味が引き締める。' },
-    { id: 'r17', base: 'ラム', styles: ['ロング', '炭酸'], flavors: ['さっぱり', '柑橘'], jp: 'ソルクバーノ', en: 'Sol Cubano', materials: 'ラム, グレープフルーツジュース, トニックウォーター', desc: '「キューバの太陽」。神戸発祥の傑作。' },
-    { id: 'r18', base: 'ラム', styles: ['ロング', 'シェイク'], flavors: ['トロピカル', '甘め', 'フルーティ'], jp: 'ゾンビ', en: 'Zombie', materials: '数種のラム, パイン, ライム, グレナデン等', desc: '「3杯飲めば死人のようになる」強力な一杯。' },
-
-    // --- TEQUILA (17 items) ---
-    { id: 't1', base: 'テキーラ', styles: ['ショート', 'シェイク'], flavors: ['柑橘', '塩味', 'さっぱり'], jp: 'マルガリータ', en: 'Margarita', materials: 'テキーラ, ホワイトキュラソー, ライム, 塩', desc: '亡き恋人を偲んで作ったとされる切ない名作。' },
-    { id: 't2', base: 'テキーラ', styles: ['ロング', 'ジュース'], flavors: ['甘め', '柑橘', 'フルーティ'], jp: 'テキーラサンライズ', en: 'Tequila Sunrise', materials: 'テキーラ, オレンジジュース, グレナデンシロップ', desc: '朝焼けのグラデーションを描く美しい一杯。' },
-    { id: 't3', base: 'テキーラ', styles: ['ロング', 'シェイク'], flavors: ['フルーティ', 'さっぱり'], jp: 'マタドール', en: 'Matador', materials: 'テキーラ, パインジュース, ライム', desc: '「闘牛士」。パインの甘みで情熱的に。' },
-    { id: 't4', base: 'テキーラ', styles: ['ショート', 'シェイク'], flavors: ['ハーブ / ミント', 'さっぱり'], jp: 'モッキンバード', en: 'Mockingbird', materials: 'テキーラ, グリーンミント, ライム', desc: 'ミントの清涼感が意外なほどマッチ。' },
-    { id: 't5', base: 'テキーラ', styles: ['ロング', '炭酸'], flavors: ['柑橘', 'さっぱり'], jp: 'パロマ', en: 'Paloma', materials: 'テキーラ, グレープフルーツ, トニック/ソーダ', desc: 'メキシコで最も親しまれているカクテル。' },
-    { id: 't6', base: 'テキーラ', styles: ['ロング', '炭酸'], flavors: ['さっぱり', '柑橘'], jp: 'メキシコーラ', en: 'Mexicola', materials: 'テキーラ, コーラ, ライム', desc: 'テキーラ版キューバリブレ。' },
-    { id: 't7', base: 'テキーラ', styles: ['ロング', 'トニック', '炭酸'], flavors: ['さっぱり', 'ドライ'], jp: 'テキーラトニック', en: 'Tequila Tonic', materials: 'テキーラ, トニックウォーター, ライム', desc: '通称「テキトニ」。' },
-    { id: 't8', base: 'テキーラ', styles: ['ショート', 'シェイク'], flavors: ['甘め', 'スパイシー'], jp: 'ブロードウェイサースト', en: 'Broadway Thirst', materials: 'テキーラ, オレンジジュース, レモンジュース', desc: 'オレンジの香りが喉の渇きを癒やす。' },
-    { id: 't9', base: 'テキーラ', styles: ['ロング', '炭酸'], flavors: ['スパイシー', '甘め', 'フルーティ'], jp: 'エル・ディアブロ', en: 'El Diablo', materials: 'テキーラ, カシスリキュール, レモン, ジンジャーエール', desc: '「悪魔」という名に反して飲みやすい。' },
-    { id: 't10', base: 'テキーラ', styles: ['ショート', 'ロック', 'シェイク'], flavors: ['柑橘', '甘め'], jp: 'トミーズマルガリータ', en: 'Tommy\'s Margarita', materials: 'テキーラ, アガベシロップ, ライム', desc: 'アガベシロップを使った現代版。' },
-    { id: 't11', base: 'テキーラ', styles: ['ロング', 'ジュース'], flavors: ['野菜 / トマト', 'スパイシー'], jp: 'ストローハット', en: 'Straw Hat', materials: 'テキーラ, トマトジュース, レモン, 香辛料', desc: 'テキーラベースのブラッディメアリー。' },
-    { id: 't12', base: 'テキーラ', styles: ['ショート', 'シェイク'], flavors: ['柑橘', 'ハーブ / ミント', '苦味'], jp: 'ネイキッド＆フェイマス', en: 'Naked and Famous', materials: 'メスカル, アペロール, シャルトリューズ黄, ライム', desc: '完璧なバランスのモダンクラシック。' },
-    { id: 't13', base: 'テキーラ', styles: ['ロング', 'シェイク'], flavors: ['フルーティ', '柑橘', '甘め'], jp: 'アイスブレーカー', en: 'Ice Breaker', materials: 'テキーラ, ホワイトキュラソー, GFJ, グレナデン', desc: '場の雰囲気を和ませる鮮やかな赤色。' },
-    { id: 't14', base: 'テキーラ', styles: ['ショート', 'シェイク'], flavors: ['甘め', '柑橘'], jp: 'シクラメン', en: 'Cyclamen', materials: 'テキーラ, コアントロー, オレンジジュース, グレナデン', desc: '可憐なシクラメンの花のような色。' },
-    { id: 't15', base: 'テキーラ', styles: ['ショート', 'ロック'], flavors: ['苦味', '甘め', 'ハーブ / ミント'], jp: 'ロージタ', en: 'Rosita', materials: 'テキーラ, カンパリ, ドライ＆スイートベルモット', desc: 'テキーラ版ネグローニ。' },
-    { id: 't16', base: 'テキーラ', styles: ['ショート', 'ロック'], flavors: ['甘め', 'クリーミー', 'コーヒー / ナッツ'], jp: 'シルクストッキング', en: 'Silk Stockings', materials: 'テキーラ, カカオリキュール, 生クリーム, グレナデン', desc: '滑らかな口当たりのデザート。' },
-    { id: 't17', base: 'テキーラ', styles: ['ショート', 'ロック', 'ビルド'], flavors: ['ドライ', 'スパイシー', '甘め'], jp: 'オアハカ・オールドファッションド', en: 'Oaxaca Old Fashioned', materials: 'テキーラ, メスカル, アガベシロップ, ビターズ', desc: '現代のNYで生まれたネオ・クラシック。メスカルのアクセントがテキーラの奥行きを広げる。' },
-
-    // --- WHISKEY (24 items) ---
-    { id: 'w1', base: 'ウイスキー', styles: ['ロング', '炭酸'], flavors: ['さっぱり', 'ドライ'], jp: 'ハイボール', en: 'Highball', materials: 'ウイスキー, ソーダ', desc: '炭酸が弾けさせる至高のスタイル。' },
-    { id: 'w2', base: 'ウイスキー', styles: ['ショート', 'ロック', 'ビルド'], flavors: ['苦味', '甘め', '柑橘'], jp: 'オールドファッションド', en: 'Old Fashioned', materials: 'バーボン, アロマチックビターズ, 角砂糖, オレンジ', desc: 'カクテルの原型とも言える一杯。' },
-    { id: 'w3', base: 'ウイスキー', styles: ['ショート', 'ステア'], flavors: ['甘め', 'ハーブ / ミント', 'ドライ'], jp: 'マンハッタン', en: 'Manhattan', materials: 'ウイスキー, スイートベルモット, ビターズ', desc: '「カクテルの女王」。' },
-    { id: 'w4', base: 'ウイスキー', styles: ['ショート', 'ロック'], flavors: ['甘め', 'コーヒー / ナッツ'], jp: 'ゴッドファーザー', en: 'Godfather', materials: 'ウイスキー, アマレット', desc: 'アマレットが重厚な世界観を表現。' },
-    { id: 'w5', base: 'ウイスキー', styles: ['ショート', 'ロック'], flavors: ['甘め', 'ハーブ / ミント'], jp: 'ラスティネイル', en: 'Rusty Nail', materials: 'スコッチウイスキー, ドランブイ', desc: '「錆びた釘」。まろやかで奥深い一杯。' },
-    { id: 'w6', base: 'ウイスキー', styles: ['ショート', 'シェイク'], flavors: ['甘め', '柑橘'], jp: 'ウイスキーサワー', en: 'Whiskey Sour', materials: 'ウイスキー, レモンジュース, 砂糖, (卵白)', desc: 'レモンの酸味でウイスキーを飲みやすく。' },
-    { id: 'w7', base: 'ウイスキー', styles: ['ロング', 'ビルド', '氷'], flavors: ['ハーブ / ミント', '甘め', 'さっぱり'], jp: 'ミントジュレップ', en: 'Mint Julep', materials: 'バーボン, ミント, 砂糖, クラッシュアイス', desc: 'キンキンに冷やして飲む南部流。' },
-    { id: 'w8', base: 'ウイスキー', styles: ['ショート', 'シェイク'], flavors: ['柑橘', '甘め'], jp: 'ニューヨーク', en: 'New York', materials: 'ライウイスキー, ライム, グレナデン, 砂糖', desc: '大都市の夕暮れを思わせるオレンジ色。' },
-    { id: 'w9', base: 'ウイスキー', styles: ['ロング', '炭酸'], flavors: ['スパイシー', 'さっぱり'], jp: 'マミーテイラー', en: 'Mamie Taylor', materials: 'スコッチウイスキー, ライム, ジンジャーエール', desc: 'スコッチのスモーキーさと辛味がマッチ。' },
-    { id: 'w10', base: 'ウイスキー', styles: ['ショート', 'ステア'], flavors: ['甘め', 'ハーブ / ミント'], jp: 'ロブ・ロイ', en: 'Rob Roy', materials: 'スコッチウイスキー, スイートベルモット, ビターズ', desc: 'スコッチベースのマンハッタン。' },
-    { id: 'w11', base: 'ウイスキー', styles: ['ショート', 'シェイク'], flavors: ['スパイシー', '柑橘', '甘め'], jp: 'ペニシリン', en: 'Penicillin', materials: 'スコッチ, レモン, 蜂蜜生姜シロップ, アイラモルト', desc: 'スモーキーなアイラをフロートさせた薬効感。' },
-    { id: 'w12', base: 'ウイスキー', styles: ['ショート', 'ロック', 'ステア'], flavors: ['苦味', '甘め', 'ハーブ / ミント'], jp: 'ブールヴァルディエ', en: 'Boulevardier', materials: 'ウイスキー, カンパリ, スイートベルモット', desc: 'リッチで温かみのある大人の味。' },
-    { id: 'w13', base: 'ウイスキー', styles: ['ロング', 'ビルド'], flavors: ['甘め', 'コーヒー / ナッツ', 'クリーミー'], jp: 'アイリッシュコーヒー', en: 'Irish Coffee', materials: 'アイリッシュウイスキー, ホットコーヒー, 砂糖, 生クリーム', desc: '絶品ホットカクテル。' },
-    { id: 'w14', base: 'ウイスキー', styles: ['ロング', 'トニック'], flavors: ['さっぱり', '柑橘', 'ドライ'], jp: 'ウイスキートニック', en: 'Whiskey Tonic', materials: 'ウイスキー, トニックウォーター', desc: '樽香がよく合うトニック割り。' },
-    { id: 'w15', base: 'ウイスキー', styles: ['ショート', 'シェイク'], flavors: ['柑橘', '甘め', 'フルーティ'], jp: 'ワードエイト', en: 'Ward Eight', materials: 'ライウイスキー, レモン, オレンジ, グレナデン', desc: 'ボストン発祥のフルーティーな一杯。' },
-    { id: 'w16', base: 'ウイスキー', styles: ['ショート', 'シェイク'], flavors: ['甘め', '柑橘'], jp: 'ゴールドラッシュ', en: 'Gold Rush', materials: 'バーボン, レモンジュース, 蜂蜜シロップ', desc: 'リッチで濃厚なモダンクラシック。' },
-    { id: 'w17', base: 'ウイスキー', styles: ['ショート', 'ステア'], flavors: ['ドライ', '苦味', 'ハーブ / ミント'], jp: 'オールドパル', en: 'Old Pal', materials: 'ライウイスキー, ドライベルモット, カンパリ', desc: '「古い友人」という名の辛口。' },
-    { id: 'w18', base: 'ウイスキー', styles: ['ショート', 'ビルド', 'ロック'], flavors: ['スパイシー', '苦味', 'ハーブ / ミント'], jp: 'サゼラック', en: 'Sazerac', materials: 'ライウイスキー, アブサン, 砂糖, ペイショーズビターズ', desc: '世界最古のカクテルの一つ。' },
-    { id: 'w19', base: 'ウイスキー', styles: ['ロング', 'ビルド'], flavors: ['柑橘', '甘め', 'さっぱり'], jp: 'ジョンコリンズ', en: 'John Collins', materials: 'ウイスキー, レモン, 砂糖, ソーダ', desc: 'トムコリンズのウイスキー版。' },
-    { id: 'w20', base: 'ウイスキー', styles: ['ショート', 'ステア'], flavors: ['苦味', 'ドライ', 'ハーブ / ミント'], jp: 'ブルックリン', en: 'Brooklyn', materials: 'ライウイスキー, ドライベルモット, アメールピコン, マラスキーノ', desc: '幻のカクテルとも呼ばれる。' },
-    { id: 'w21', base: 'ウイスキー', styles: ['ショート', 'ステア'], flavors: ['ハーブ / ミント', '甘め', '苦味'], jp: 'モンテカルロ', en: 'Monte Carlo', materials: 'ライウイスキー, ベネディクティン, ビターズ', desc: 'リッチでエレガントな味わい。' },
-    { id: 'w22', base: 'ウイスキー', styles: ['ショート', 'ステア'], flavors: ['ハーブ / ミント', '甘め', '苦味'], jp: 'リメンバー・ザ・メイン', en: 'Remember the Maine', materials: 'ライウイスキー, スイートベルモット, チェリーヒーリング, アブサン', desc: 'アブサンが香る力強い一杯。' },
-    { id: 'w23', base: 'ウイスキー', styles: ['ショート', 'シェイク'], flavors: ['甘め', 'フルーティ'], jp: 'ブラッド・アンド・サンド', en: 'Blood and Sand', materials: 'スコッチ, スイートベルモット, チェリーブランデー, オレンジ', desc: '1922年の映画を記念した一杯。ドラマチックな味。' },
-    { id: 'w24', base: 'ウイスキー', styles: ['ショート', 'シェイク'], flavors: ['苦味', '柑橘', '甘め'], jp: 'ペーパープレーン', en: 'Paper Plane', materials: 'バーボン, アペロール, アマーロ・ノニーノ, レモン', desc: '2008年誕生のニュー・クラシック。完璧なバランス。' },
-
-    // --- BRANDY (22 items) ---
-    { id: 'b1', base: 'ブランデー', styles: ['ショート', 'シェイク'], flavors: ['甘め', '柑橘'], jp: 'サイドカー', en: 'Sidecar', materials: 'ブランデー, ホワイトキュラソー, レモン', desc: 'ブランデーのコクと柑橘の完璧なバランス。' },
-    { id: 'b2', base: 'ブランデー', styles: ['ショート', 'シェイク'], flavors: ['甘め', 'クリーミー', 'コーヒー / ナッツ'], jp: 'アレキサンダー', en: 'Alexander', materials: 'ブランデー, カカオリキュール, 生クリーム', desc: 'カカオとクリームの贅沢デザート。' },
-    { id: 'b3', base: 'ブランデー', styles: ['ショート', 'シェイク'], flavors: ['甘め', 'フルーティ'], jp: 'ジャックローズ', en: 'Jack Rose', materials: 'カルヴァドス, ライム, グレナデンシロップ', desc: 'バラのつぼみのようなカクテル。' },
-    { id: 'b4', base: 'ブランデー', styles: ['ロング', '炭酸'], flavors: ['柑橘', 'さっぱり'], jp: 'フレンチ125', en: 'French 125', materials: 'ブランデー, レモン, 砂糖, シャンパン', desc: 'シャンパンを使ったリッチな一杯。' },
-    { id: 'b5', base: 'ブランデー', styles: ['ロング', 'ビルド'], flavors: ['ドライ', '柑橘', 'スパイシー'], jp: 'ホーセズネック', en: "Horse's Neck", materials: 'ブランデー, ジンジャーエール, レモンの皮', desc: '長くむいたレモンの皮が特徴。' },
-    { id: 'b6', base: 'ブランデー', styles: ['ショート', 'ビルド'], flavors: ['甘め', '柑橘'], jp: 'ニコラシカ', en: 'Nikolaschka', materials: 'ブランデー, レモンスライス, 砂糖', desc: '口の中で完成させる異色作。' },
-    { id: 'b7', base: 'ブランデー', styles: ['ショート', 'ロック'], flavors: ['甘め', 'コーヒー / ナッツ'], jp: 'フレンチコネクション', en: 'French Connection', materials: 'ブランデー, アマレット', desc: 'ブランデーとアマレットの相性が抜群。' },
-    { id: 'b8', base: 'ブランデー', styles: ['ショート', 'シェイク'], flavors: ['ハーブ / ミント', 'さっぱり'], jp: 'スティンガー', en: 'Stinger', materials: 'ブランデー, ホワイトミント', desc: 'ミントの鋭い清涼感の食後酒。' },
-    { id: 'b9', base: 'ブランデー', styles: ['ロング', 'トニック', '炭酸'], flavors: ['さっぱり', '柑橘', 'フルーティ'], jp: 'カルヴァドストニック', en: 'Calvados Tonic', materials: 'カルヴァドス, トニックウォーター', desc: 'リンゴの香りと苦味がマッチ。' },
-    { id: 'b10', base: 'ブランデー', styles: ['ショート', 'ステア'], flavors: ['甘め', 'ハーブ / ミント', 'ドライ'], jp: 'キャロル', en: 'Carol', materials: 'ブランデー, スイートベルモット', desc: '優雅な余韻を残す美しい一杯。' },
-    { id: 'b11', base: 'ブランデー', styles: ['ショート', 'ステア', 'ロック'], flavors: ['苦味', 'ハーブ / ミント', 'ドライ'], jp: 'ビュー・カレ', en: 'Vieux Carre', materials: 'ライウイスキー, ブランデー, スイートベルモット, ベネディクティン', desc: 'ニューオーリンズ生まれの名作。' },
-    { id: 'b12', base: 'ブランデー', styles: ['ショート', 'シェイク'], flavors: ['甘め', '柑橘'], jp: 'ブランデーサワー', en: 'Brandy Sour', materials: 'ブランデー, レモン, 砂糖, ソーダ', desc: 'フルーティーで初心者にもおすすめ。' },
-    { id: 'b13', base: 'ブランデー', styles: ['ショート', 'シェイク'], flavors: ['柑橘', '甘め'], jp: 'ビトウィーン・ザ・シーツ', en: 'Between the Sheets', materials: 'ブランデー, ホワイトラム, コアントロー, レモン', desc: '寝酒として有名な一杯。' },
-    { id: 'b14', base: 'ブランデー', styles: ['ショート', 'シェイク'], flavors: ['甘め', '柑橘'], jp: 'ピスコサワー', en: 'Pisco Sour', materials: 'ピスコ, レモン, 砂糖, 卵白, ビターズ', desc: 'ペルーとチリの国民的カクテル。' },
-    { id: 'b15', base: 'ブランデー', styles: ['ショート', 'シェイク'], flavors: ['甘め', '柑橘'], jp: 'オリンピック', en: 'Olympic', materials: 'ブランデー, オレンジキュラソー, オレンジジュース', desc: 'コニャックとオレンジの格式高い味。' },
-    { id: 'b16', base: 'ブランデー', styles: ['ショート', 'ビルド'], flavors: ['ハーブ / ミント', '甘め'], jp: 'B&B', en: 'B&B', materials: 'ブランデー, ベネディクティン', desc: 'シンプルかつ濃厚。' },
-    { id: 'b17', base: 'ブランデー', styles: ['ショート', 'ロック'], flavors: ['甘め', 'コーヒー / ナッツ', '苦味'], jp: 'ダーティマザー', en: 'Dirty Mother', materials: 'ブランデー, コーヒーリキュール', desc: '深みのある味わい。' },
-    { id: 'b18', base: 'ブランデー', styles: ['ショート', 'シェイク'], flavors: ['フルーティ', 'ハーブ / ミント', '甘め'], jp: 'ハネムーン', en: 'Honeymoon', materials: 'アップルブランデー, ベネディクティン, キュラソー, レモン', desc: '甘く幸せな「蜜月」の味。' },
-    { id: 'b19', base: 'ブランデー', styles: ['ロング', 'シェイク'], flavors: ['さっぱり', '柑橘', 'フルーティ'], jp: 'ハーバードクーラー', en: 'Harvard Cooler', materials: 'アップルブランデー, レモン, 砂糖, ソーダ', desc: '爽やかで知的な味わい。' },
-    { id: 'b20', base: 'ブランデー', styles: ['ショート', 'シェイク'], flavors: ['フルーティ', '甘め', 'ドライ'], jp: 'コープスリバイバーNo.1', en: 'Corpse Reviver No.1', materials: 'ブランデー, アップルブランデー, スイートベルモット', desc: '力強い迎え酒。' },
-    { id: 'b21', base: 'ブランデー', styles: ['ショート', 'シェイク'], flavors: ['甘め', 'ハーブ / ミント'], jp: 'ウィドウズ・キス', en: 'Widow\'s Kiss', materials: 'カルヴァドス, ベネディクティン, シャルトリューズ黄', desc: '非常に重厚で魅惑的な食後酒。蜜のような余韻。' },
-    { id: 'b22', base: 'ブランデー', styles: ['ロング', '炭酸'], flavors: ['さっぱり', '柑橘', 'スパイシー'], jp: 'チルカーノ', en: 'Chilcano', materials: 'ピスコ, ライム, ジンジャーエール, ビターズ', desc: 'ピスコを爽快に楽しむロング。' },
-
-    // --- LIQUEUR (29 items) ---
-    { id: 'l1', base: 'リキュール', styles: ['ロング', 'ジュース'], flavors: ['甘め', 'フルーティ'], jp: 'カシスオレンジ', en: 'Cassis and Orange', materials: 'カシスリキュール, オレンジジュース', desc: '鉄板の甘酸っぱい定番。' },
-    { id: 'l2', base: 'リキュール', styles: ['ロング', '炭酸', 'トニック'], flavors: ['苦味', '柑橘', 'さっぱり'], jp: 'スプモーニ', en: 'Spumoni', materials: 'カンパリ, グレープフルーツ, トニック', desc: '完璧な三角形を描く食前酒。' },
-    { id: 'l3', base: 'リキュール', styles: ['ロング', '炭酸', 'トニック'], flavors: ['甘め', '柑橘', 'トロピカル'], jp: 'チャイナブルー', en: 'China Blue', materials: 'ライチリキュール, ブルーキュラソー, GFJ, トニック', desc: 'オリエンタルな雰囲気。' },
-    { id: 'l4', base: 'リキュール', styles: ['ロング', 'ジュース'], flavors: ['甘め', 'フルーティ'], jp: 'ファジーネーブル', en: 'Fuzzy Navel', materials: 'ピーチリキュール, オレンジジュース', desc: '優しくフルーティー。' },
-    { id: 'l5', base: 'リキュール', styles: ['ショート', 'シェイク'], flavors: ['甘め', 'ハーブ / ミント', 'クリーミー'], jp: 'グラスホッパー', en: 'Grasshopper', materials: 'ミントリキュール, カカオリキュール, 生クリーム', desc: 'チョコミント味のデザート。' },
-    { id: 'l6', base: 'リキュール', styles: ['ロング', 'ロック', 'ジュース'], flavors: ['甘め', 'クリーミー', '苦味', 'コーヒー / ナッツ'], jp: 'カルーアミルク', en: 'Kahlua and Milk', materials: 'カルーア, 牛乳', desc: 'カフェオレのような飲みやすさ。' },
-    { id: 'l7', base: 'リキュール', styles: ['ロング', '炭酸'], flavors: ['苦味', 'さっぱり'], jp: 'カンパリソーダ', en: 'Campari and Soda', materials: 'カンパリ, ソーダ', desc: '大人のイタリアン清涼剤。' },
-    { id: 'l8', base: 'リキュール', styles: ['ロング', 'ジュース'], flavors: ['甘め', 'フルーティ', 'トロピカル'], jp: 'マリブコーク', en: 'Malibu Coke', materials: 'マリブ, コーラ', desc: 'ココナッツが香るカジュアルな一杯。' },
-    { id: 'l9', base: 'リキュール', styles: ['ロング', '炭酸'], flavors: ['苦味', '柑橘', 'さっぱり'], jp: 'アペロールスプリッツ', en: 'Aperol Spritz', materials: 'アペロール, プロセッコ, ソーダ, オレンジ', desc: 'イタリアの夕暮れの定番。' },
-    { id: 'l10', base: 'リキュール', styles: ['ロング', 'ジュース'], flavors: ['甘め', 'フルーティ', 'さっぱり'], jp: 'レゲエパンチ', en: 'Reggae Punch', materials: 'ピーチリキュール, ウーロン茶', desc: '仙台発祥「ピーチウーロン」。' },
-    { id: 'l11', base: 'リキュール', styles: ['ロング', '炭酸', 'トニック'], flavors: ['甘め', 'フルーティ', 'トロピカル'], jp: 'ディタオニ', en: 'Ditaoni', materials: 'ディタ（ライチ）, GFJ, トニック', desc: 'ライチの風味が際立つ。' },
-    { id: 'l12', base: 'リキュール', styles: ['ロング', 'トニック'], flavors: ['甘め', 'トロピカル', 'さっぱり'], jp: 'マリブトニック', en: 'Malibu Tonic', materials: 'マリブ, トニックウォーター', desc: '爽やかなトロピカル・ロング。' },
-    { id: 'l13', base: 'リキュール', styles: ['ロング', 'トニック'], flavors: ['甘め', 'フルーティ', 'さっぱり'], jp: 'カシストニック', en: 'Cassis Tonic', materials: 'カシスリキュール, トニックウォーター', desc: 'トニックが引き締める。' },
-    { id: 'l14', base: 'リキュール', styles: ['ロング', 'トニック'], flavors: ['甘め', 'フルーティ', 'さっぱり'], jp: 'ピーチトニック', en: 'Peach Tonic', materials: 'ピーチリキュール, トニックウォーター', desc: '軽やかな桃のロング。' },
-    { id: 'l15', base: 'リキュール', styles: ['ロング', 'トニック'], flavors: ['ハーブ / ミント', 'さっぱり', '苦味'], jp: 'スーズトニック', en: 'Suze Tonic', materials: 'スーズ, トニックウォーター', desc: '独特の土っぽい苦味が癖になる。' },
-    { id: 'l16', base: 'リキュール', styles: ['ロング', 'トニック'], flavors: ['ハーブ / ミント', 'さっぱり', '苦味'], jp: 'シャルトリューズトニック', en: 'Chartreuse Tonic', materials: 'シャルトリューズ, トニック', desc: 'ハーブ香る贅沢な一杯。' },
-    { id: 'l17', base: 'リキュール', styles: ['ロング', 'トニック'], flavors: ['フルーティ', 'さっぱり', '柑橘'], jp: 'パッソアトニック', en: 'Passoa Tonic', materials: 'パッソア, トニックウォーター', desc: 'トロピカルな酸味。' },
-    { id: 'l18', base: 'リキュール', styles: ['ロング', 'トニック'], flavors: ['フルーティ', 'さっぱり'], jp: 'ミドリオニ', en: 'Midorioni', materials: 'ミドリ, GFJ, トニック', desc: 'メロンの甘みと苦味が調和。' },
-    { id: 'l19', base: 'リキュール', styles: ['ショート', 'シェイク'], flavors: ['甘め', '柑橘'], jp: 'バレンシア', en: 'Valencia', materials: 'アプリコットブランデー, オレンジジュース, ビターズ', desc: '太陽のように明るい味。' },
-    { id: 'l20', base: 'リキュール', styles: ['ショート', 'シェイク'], flavors: ['甘め', 'フルーティ'], jp: 'チャーリーチャップリン', en: 'Charlie Chaplin', materials: 'スロージン, アプリコットブランデー, レモン', desc: '喜劇王の名を冠した甘酸っぱい味。' },
-    { id: 'l21', base: 'リキュール', styles: ['ロング', '炭酸'], flavors: ['苦味', 'さっぱり'], jp: 'アメリカーノ', en: 'Americano', materials: 'カンパリ, スイートベルモット, ソーダ', desc: 'ボンドが最初に注文した酒。' },
-    { id: 'l22', base: 'リキュール', styles: ['ロング', 'ジュース', 'シェイク'], flavors: ['甘め', 'クリーミー'], jp: 'スノーボール', en: 'Snowball', materials: 'アドヴォカート, ライムジュース, ソーダ', desc: '雪玉のように白くまろやか。' },
-    { id: 'l23', base: 'リキュール', styles: ['ロング', 'シェイク', '炭酸'], flavors: ['甘め', 'フルーティ'], jp: 'バイオレットフィズ', en: 'Violet Fizz', materials: 'パルフェタムール, レモン, ソーダ', desc: '華やかに香る紫色のカクテル。' },
-    { id: 'l24', base: 'リキュール', styles: ['ロング', 'ジュース'], flavors: ['甘め', 'トロピカル', 'クリーミー'], jp: 'マリブミルク', en: 'Malibu Milk', materials: 'マリブ, 牛乳', desc: '杏仁豆腐のような風味。' },
-    { id: 'l25', base: 'リキュール', styles: ['ロング', 'ジュース'], flavors: ['苦味', '甘め', '柑橘'], jp: 'カンパリオレンジ', en: 'Campari Orange', materials: 'カンパリ, オレンジジュース', desc: 'イタリアの名作「ガリバルディ」。' },
-    { id: 'l26', base: 'リキュール', styles: ['ショート', 'ビルド'], flavors: ['甘め', 'コーヒー / ナッツ', 'クリーミー'], jp: 'B-52', en: 'B-52', materials: 'カルーア, ベイリーズ, グランマルニエ', desc: '層に重ねたプースカフェ。' },
-    { id: 'l27', base: 'リキュール', styles: ['ショート', 'シェイク'], flavors: ['甘め', 'コーヒー / ナッツ', '柑橘'], jp: 'アマレットサワー', en: 'Amaretto Sour', materials: 'アマレット, レモン, 卵白', desc: 'お菓子のような風味が楽しめる。' },
-    { id: 'l28', base: 'リキュール', styles: ['ショート', 'シェイク'], flavors: ['甘め', 'クリーミー', 'ハーブ / ミント'], jp: 'ゴールデンキャデラック', en: 'Golden Cadillac', materials: 'ガリアーノ, ホワイトカカオ, 生クリーム', desc: '黄金色の高級デザート。' },
-    { id: 'l29', base: 'リキュール', styles: ['ショート', 'シェイク'], flavors: ['甘め', 'クリーミー', '柑橘'], jp: 'ゴールデンドリーム', en: 'Golden Dream', materials: 'ガリアーノ, コアントロー, オレンジ, 生クリーム', desc: '夢見心地な甘さと口当たり。' },
-
-    // --- WINE (15 items) ---
-    { id: 'wi1', base: 'ワイン', styles: ['ロング', 'ビルド'], flavors: ['甘め', 'フルーティ'], jp: 'キール', en: 'Kir', materials: '白ワイン, カシスリキュール', desc: '食前酒の代名詞的存在。' },
-    { id: 'wi2', base: 'ワイン', styles: ['ロング', '炭酸'], flavors: ['さっぱり', 'ドライ'], jp: 'スプリッツァー', en: 'Spritzer', materials: '白ワイン, ソーダ', desc: 'シンプルで軽やかな一杯。' },
-    { id: 'wi3', base: 'ワイン', styles: ['ロング', '炭酸'], flavors: ['甘め', 'さっぱり'], jp: 'キティ', en: 'Kitty', materials: '赤ワイン, ジンジャーエール', desc: '渋みが和らいだ「子猫」。' },
-    { id: 'wi4', base: 'ワイン', styles: ['ロング', '炭酸'], flavors: ['甘め', 'さっぱり'], jp: 'オペレーター', en: 'Operator', materials: '白ワイン, ジンジャーエール', desc: '白ワイン版のキティ。' },
-    { id: 'wi5', base: 'ワイン', styles: ['ロング', 'ビルド'], flavors: ['柑橘', '甘め', 'さっぱり'], jp: 'アメリカンレモネード', en: 'American Lemonade', materials: '赤ワイン, レモン, 砂糖, 水', desc: '二層の美しいカクテル。' },
-    { id: 'wi6', base: 'ワイン', styles: ['ロング', 'ジュース'], flavors: ['柑橘', 'フルーティ', '甘め'], jp: 'ミモザ', en: 'Mimosa', materials: 'シャンパン, オレンジジュース', desc: '贅沢なブランチの定番。' },
-    { id: 'wi7', base: 'ワイン', styles: ['ロング', 'ジュース'], flavors: ['フルーティ', '甘め'], jp: 'ベリーニ', en: 'Bellini', materials: 'プロセッコ, ピーチネクター', desc: '白桃のピューレが上品。' },
-    { id: 'wi8', base: 'ワイン', styles: ['ロング', 'ジュース'], flavors: ['フルーティ', '甘め'], jp: 'サングリア', en: 'Sangria', materials: '赤ワイン, フルーツ, 砂糖, スパイス', desc: 'スペインの陽気な国民酒。' },
-    { id: 'wi9', base: 'ワイン', styles: ['ロング', 'ビルド'], flavors: ['甘め', 'フルーティ'], jp: 'キールロワイヤル', en: 'Kir Royal', materials: 'シャンパン, カシスリキュール', desc: 'より華やかで祝祭感のある一杯。' },
-    { id: 'wi10', base: 'ワイン', styles: ['ショート', 'ステア'], flavors: ['ドライ', 'ハーブ / ミント'], jp: 'バンブー', en: 'Bamboo', materials: 'ドライシェリー, ドライベルモット', desc: '横浜生まれの世界的名作。' },
-    { id: 'wi11', base: 'ワイン', styles: ['ショート', 'ステア'], flavors: ['甘め', 'ハーブ / ミント'], jp: 'アドニス', en: 'Adonis', materials: 'ドライシェリー, スイートベルモット', desc: '優雅でバランスの取れた味。' },
-    { id: 'wi12', base: 'ワイン', styles: ['ロング', 'ジュース'], flavors: ['甘め', 'フルーティ', '柑橘'], jp: 'ワインクーラー', en: 'Wine Cooler', materials: 'ワイン, オレンジ, グレナデン', desc: '暑い季節にぴったりの一杯。' },
-    { id: 'wi13', base: 'ワイン', styles: ['ショート', 'シェイク'], flavors: ['甘め', 'クリーミー', 'コーヒー / ナッツ'], jp: 'ポートフリップ', en: 'Porto Flip', materials: 'ポートワイン, ブランデー, 卵黄, 砂糖', desc: '濃厚でリッチな滋養強壮酒。' },
-    { id: 'wi14', base: 'ワイン', styles: ['ロング', '炭酸'], flavors: ['さっぱり', '柑橘', '甘め'], jp: 'ティント・デ・ベラノ', en: 'Tinto de Verano', materials: '赤ワイン, レモンソーダ', desc: '「夏の赤ワイン」スペインの定番。' },
-    { id: 'wi15', base: 'ワイン', styles: ['ロング', '炭酸'], flavors: ['さっぱり', '柑橘', 'ドライ'], jp: 'レブヒート', en: 'Rebujito', materials: 'シェリー, スプライト, ミント', desc: 'モヒートのような爽やかさ。' },
-
-    // --- BEER (10 items) ---
-    { id: 'be1', base: 'ビール', styles: ['ロング', '炭酸'], flavors: ['さっぱり', '苦味', 'スパイシー'], jp: 'シャンディガフ', en: 'Shandy Gaff', materials: 'ビール, ジンジャーエール', desc: 'ビールの苦味が和らぎ飲みやすい。' },
-    { id: 'be2', base: 'ビール', styles: ['ロング', 'ジュース'], flavors: ['野菜 / トマト', 'さっぱり', '苦味'], jp: 'レッドアイ', en: 'Red Eye', materials: 'ビール, トマトジュース', desc: 'ヘルシーな一杯。' },
-    { id: 'be3', base: 'ビール', styles: ['ロング', 'ビルド'], flavors: ['ドライ', '苦味'], jp: 'ドッグスノーズ', en: "Dog's Nose", materials: 'ビール, ジン', desc: 'ビールにジンを加えた強烈な一杯。' },
-    { id: 'be4', base: 'ビール', styles: ['ロング', '炭酸'], flavors: ['柑橘', 'さっぱり'], jp: 'パナシェ', en: 'Panache', materials: 'ビール, レモンソーダ', desc: 'フランスで人気の軽快な一杯。' },
-    { id: 'be5', base: 'ビール', styles: ['ロング', '炭酸'], flavors: ['苦味', '甘め'], jp: 'カンパリビア', en: 'Campari Beer', materials: 'ビール, カンパリ', desc: 'ハーブ香が深みを与える。' },
-    { id: 'be6', base: 'ビール', styles: ['ロング', 'ビルド'], flavors: ['塩味', 'スパイシー', '野菜 / トマト'], jp: 'ミチェラーダ', en: 'Michelada', materials: 'ビール, ライム, 塩, タバスコ', desc: 'メキシコの国民的スパイシービール。' },
-    { id: 'be7', base: 'ビール', styles: ['ロング', '炭酸'], flavors: ['甘め', '苦味'], jp: 'ディーゼル', en: 'Diesel', materials: 'ビール, コーラ', desc: '黒い液体が燃料に見えることから。' },
-    { id: 'be8', base: 'ビール', styles: ['ロング', 'ビルド'], flavors: ['苦味', 'クリーミー'], jp: 'ブラックベルベット', en: 'Black Velvet', materials: 'スタウト, シャンパン', desc: 'ベルベットのように滑らかな高貴な酒。' },
-    { id: 'be9', base: 'ビール', styles: ['ロング', 'ビルド'], flavors: ['苦味', 'ドライ'], jp: 'ボイラーメーカー', en: 'Boilermaker', materials: 'ビール, ウイスキー', desc: '労働者のための熱い酒。' },
-    { id: 'be10', base: 'ビール', styles: ['ロング', '炭酸'], flavors: ['甘め', 'フルーティ', '苦味'], jp: 'カシスビア', en: 'Cassis Beer', materials: 'ビール, カシスリキュール', desc: '見た目も美しいカクテル。' },
-
-    // --- SAKE (8 items) ---
-    { id: 'sa1', base: '日本酒', styles: ['ショート', 'ロック'], flavors: ['柑橘', 'さっぱり'], jp: 'サムライロック', en: 'Samurai Rock', materials: '日本酒, ライムジュース', desc: 'キリッとした飲み口。' },
-    { id: 'sa2', base: '日本酒', styles: ['ショート', 'ステア'], flavors: ['ドライ', 'さっぱり'], jp: 'サケティーニ', en: 'Saketini', materials: '日本酒, ジン, オリーブ', desc: '欧米でも人気のモダンクラシック。' },
-    { id: 'sa3', base: '日本酒', styles: ['ロング', '炭酸', 'トニック'], flavors: ['さっぱり', '柑橘', '苦味'], jp: 'サケソニック', en: 'Sake Sonic', materials: '日本酒, トニック, ソーダ, ライム', desc: '日本酒を引き立てる爽快感。' },
-    { id: 'sa4', base: '日本酒', styles: ['ロング', '炭酸'], flavors: ['甘め', 'さっぱり'], jp: '日本酒ハイボール', en: 'Sake Highball', materials: '日本酒, ソーダ, レモン', desc: '吟醸香が広がる食中酒。' },
-    { id: 'sa5', base: '日本酒', styles: ['ロング', 'ジュース'], flavors: ['甘め', 'クリーミー'], jp: 'カルピス日本酒', en: 'Calpis Sake', materials: '日本酒, カルピス', desc: '発酵食品同士の相性が抜群。' },
-    { id: 'sa6', base: '日本酒', styles: ['ショート', 'シェイク'], flavors: ['甘め', 'フルーティ'], jp: '撫子', en: 'Nadeshiko', materials: '日本酒, 卵白, グレナデン', desc: '優美なピンク色のショート。' },
-    { id: 'sa7', base: '日本酒', styles: ['ロング', 'ビルド'], flavors: ['苦味', 'さっぱり'], jp: 'サケボム', en: 'Sake Bomb', materials: '日本酒, ビール', desc: 'パーティードリンクの定番。' },
-    { id: 'sa8', base: '日本酒', styles: ['ロング', 'ビルド'], flavors: ['さっぱり', 'ハーブ / ミント'], jp: '緑茶ハイ', en: 'Green Tea Sake', materials: '日本酒, 緑茶', desc: '食事に合うさっぱりした味。' },
-
-    // --- NON-ALCOHOL (15 items) ---
-    { id: 'n1', base: 'ノンアルコール', styles: ['ロング', '炭酸'], flavors: ['甘め', '柑橘'], jp: 'シャーリーテンプル', en: 'Shirley Temple', materials: 'ジンジャーエール, グレナデン', desc: '往年の名子役の名を冠した定番。' },
-    { id: 'n2', base: 'ノンアルコール', styles: ['ロング', '炭酸'], flavors: ['さっぱり', '柑橘'], jp: 'サラトガクーラー', en: 'Saratoga Cooler', materials: 'ライム, ジンジャーエール', desc: '食事にも合う爽快感。' },
-    { id: 'n3', base: 'ノンアルコール', styles: ['ロング', 'トニック', '炭酸'], flavors: ['苦味', 'さっぱり', '柑橘'], jp: 'トニックライム', en: 'Tonic Lime', materials: 'トニックウォーター, ライム', desc: 'シンプルイズベスト。' },
-    { id: 'n4', base: 'ノンアルコール', styles: ['ショート', 'シェイク', 'ジュース'], flavors: ['甘め', 'フルーティ'], jp: 'シンデレラ', en: 'Cinderella', materials: 'オレンジ, パイン, レモン', desc: '魔法の味の満足感。' },
-    { id: 'n5', base: 'ノンアルコール', styles: ['ロング', 'ジュース'], flavors: ['スパイシー', '野菜 / トマト'], jp: 'バージンメアリー', en: 'Virgin Mary', materials: 'トマト, レモン, タバスコ', desc: '健康的でリフレッシュ。' },
-    { id: 'n6', base: 'ノンアルコール', styles: ['ロング', 'ジュース'], flavors: ['甘め', '柑橘'], jp: 'プッシーキャット', en: 'Pussyfoot', materials: 'オレンジ, GFJ, 卵黄', desc: '濃厚でリッチな味わい。' },
-    { id: 'n7', base: 'ノンアルコール', styles: ['ロング', 'ジュース'], flavors: ['フルーティ', 'トロピカル'], jp: 'フロリダ', en: 'Florida', materials: 'オレンジ, レモン, ビターズ', desc: '大人のノンアルコール。' },
-    { id: 'n8', base: 'ノンアルコール', styles: ['ロング', 'ビルド'], flavors: ['さっぱり', '柑橘'], jp: 'アーノルドパーマー', en: 'Arnold Palmer', materials: 'アイスティー, レモン', desc: 'レモネードとアイスティーのミックス。' },
-    { id: 'n9', base: 'ノンアルコール', styles: ['ロング', '炭酸'], flavors: ['スパイシー', 'さっぱり'], jp: 'シャーリージンジャー', en: 'Shirley Ginger', materials: 'ジンジャーエール, グレナデン', desc: '生姜の刺激が大人っぽい。' },
-    { id: 'n10', base: 'ノンアルコール', styles: ['ショート', 'シェイク'], flavors: ['フルーティ', '甘め'], jp: 'ベリーベリー', en: 'Berry Berry', materials: 'クランベリー, ラズベリー', desc: 'デザート感覚で楽しめる。' },
-    { id: 'n11', base: 'ノンアルコール', styles: ['ロング', '炭酸', 'ビルド'], flavors: ['ハーブ / ミント', 'さっぱり'], jp: 'バージンモヒート', en: 'Virgin Mojito', materials: 'ミント, ライム, ソーダ', desc: 'たっぷりのフレッシュミント。' },
-    { id: 'n12', base: 'ノンアルコール', styles: ['ロング', '炭酸'], flavors: ['フルーティ', 'さっぱり'], jp: 'サマーディライト', en: 'Summer Delight', materials: 'ライム, グレナデン, ソーダ', desc: '「夏の喜び」爽快な一杯。' },
-    { id: 'n13', base: 'ノンアルコール', styles: ['ロング', 'ジュース'], flavors: ['フルーティ', '甘め'], jp: 'セーフセックスオンザビーチ', en: 'Safe Sex on the Beach', materials: 'クランベリー, GFJ, ピーチ', desc: 'フルーティーでトロピカル。' },
-    { id: 'n14', base: 'ノンアルコール', styles: ['ロング', 'シェイク'], flavors: ['トロピカル', '甘め', 'クリーミー'], jp: 'バージンコラーダ', en: 'Virgin Colada', materials: 'パイン, ココナッツミルク', desc: '濃厚なココナッツとパイン。' },
-    { id: 'n15', base: 'ノンアルコール', styles: ['ロング', '炭酸'], flavors: ['さっぱり', '柑橘'], jp: 'レモンスカッシュ', en: 'Lemon Squash', materials: 'レモン, 砂糖, ソーダ', desc: 'バーの本気レモンスカッシュ。' }
-];
-
-const cocktails = Array.from(new Map(rawCocktails.map(c => [c.id, c])).values());
-
-const CONFIG = {
-    bases: ['ジン', 'ラム', 'ウォッカ', 'テキーラ', 'ウイスキー', 'ブランデー', 'ワイン', 'ビール', '日本酒', 'リキュール', 'ノンアルコール'],
-    types: ['ロング', 'ショート'],
-    styles: ['炭酸', 'トニック', 'ジュース', 'ロック', 'ストレート'],
-    flavors: ['柑橘', '甘め', 'ドライ', 'さっぱり', 'フルーティ', '苦味', 'ハーブ / ミント', 'クリーミー', 'スパイシー', '塩味', 'トロピカル', '野菜 / トマト']
-};
-
-let state = { base: null, type: null, style: null, flavors: new Set(), keyword: '' };
-let favorites = new Set(JSON.parse(localStorage.getItem('barRecallFavs') || '[]'));
-
-const els = {
-    baseGrid: document.getElementById('baseGrid'),
-    typeGrid: document.getElementById('typeGrid'),
-    styleGrid: document.getElementById('styleGrid'),
-    flavorGrid: document.getElementById('flavorGrid'),
-    cocktailList: document.getElementById('cocktailList'),
-    favList: document.getElementById('favList'),
-    favCount: document.getElementById('favCount'),
-    resetBtn: document.getElementById('resetBtn'),
-    favToggleBtn: document.getElementById('favToggleBtn'),
-    viewSearch: document.getElementById('view-search'),
-    viewFavorites: document.getElementById('view-favorites'),
-    keywordInput: document.getElementById('keywordInput'),
-    searchResultCount: document.getElementById('searchResultCount'),
-    menuHeading: document.getElementById('menuHeading')
-};
-
-// Download Self Function (Triple Click on Title)
-document.querySelector('.brand').addEventListener('click', function(e) {
-    if (e.detail === 3) {
-        const htmlContent = document.documentElement.outerHTML;
-        const blob = new Blob([htmlContent], { type: 'text/html' });
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = 'Cocktaily.html';
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-        URL.revokeObjectURL(url);
-    }
-});
-
-function init() {
-    renderPanels();
-    setupEventListeners();
-    updateResults();
-}
-
-function renderPanels() {
-    els.baseGrid.innerHTML = '';
-    els.typeGrid.innerHTML = '';
-    els.styleGrid.innerHTML = '';
-    els.flavorGrid.innerHTML = '';
-
-    CONFIG.bases.forEach(item => els.baseGrid.appendChild(createPanel(item, 'base')));
-    CONFIG.types.forEach(item => els.typeGrid.appendChild(createPanel(item, 'type')));
-    CONFIG.styles.forEach(item => els.styleGrid.appendChild(createPanel(item, 'style')));
-    CONFIG.flavors.forEach(item => {
-        const p = createPanel(item, 'flavor');
-        p.classList.add('flavor');
-        els.flavorGrid.appendChild(p);
-    });
-}
-
-function createPanel(text, type) {
-    const div = document.createElement('div');
-    div.className = 'panel';
-    div.textContent = text;
-    div.dataset.value = text;
-    div.onclick = () => handleSelection(type, text, div, div.parentElement);
-    return div;
-}
-
-function handleSelection(type, value, el, container) {
-    if (el.classList.contains('disabled')) return;
-    const isActive = el.classList.contains('active');
-    if (type !== 'flavor') {
-        Array.from(container.children).forEach(c => c.classList.remove('active'));
-        if (isActive) { state[type] = null; } else { el.classList.add('active'); state[type] = value; }
-    } else {
-        if (isActive) { el.classList.remove('active'); state.flavors.delete(value); } 
-        else { el.classList.add('active'); state.flavors.add(value); }
-    }
-    updatePanelAvailability();
-    updateResults();
-}
-
-function updatePanelAvailability() {
-    document.querySelectorAll('.panel').forEach(p => {
-        const type = p.parentElement.id.replace('Grid', '');
-        const val = p.dataset.value;
-        if (p.classList.contains('active')) { p.classList.remove('disabled'); return; }
-        
-        const tempState = { ...state, flavors: new Set(state.flavors) };
-        if (type === 'flavor') tempState.flavors.add(val); else tempState[type] = val;
-
-        const exists = cocktails.some(c => {
-            if (tempState.base && c.base !== tempState.base) return false;
-            if (tempState.type && !c.styles.includes(tempState.type)) return false;
-            if (tempState.style && !c.styles.includes(tempState.style)) return false;
-            if (tempState.flavors.size > 0 && !Array.from(tempState.flavors).some(f => c.flavors.includes(f))) return false;
-            return true;
-        });
-        p.classList.toggle('disabled', !exists);
-    });
-}
-
-function setupEventListeners() {
-    els.keywordInput.addEventListener('input', (e) => {
-        state.keyword = e.target.value.toLowerCase().trim();
-        updateResults();
-    });
-
-    els.searchResultCount.addEventListener('click', () => {
-        if (els.viewSearch.classList.contains('active')) {
-            els.menuHeading.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-    });
-
-    els.resetBtn.addEventListener('click', () => {
-        if (els.viewFavorites.classList.contains('active')) {
-            switchView('search');
-        } else {
-            state = { base: null, type: null, style: null, flavors: new Set(), keyword: '' };
-            els.keywordInput.value = '';
-            document.querySelectorAll('.panel').forEach(p => { p.classList.remove('active'); p.classList.remove('disabled'); });
-            updateResults();
-        }
-    });
-
-    els.favToggleBtn.addEventListener('click', () => {
-        if (els.viewFavorites.classList.contains('active')) {
-            switchView('search');
-        } else {
-            switchView('favorites');
-        }
-    });
-}
-
-function switchView(target) {
-    const isSearch = target === 'search';
-    els.viewSearch.classList.toggle('active', isSearch);
-    els.viewFavorites.classList.toggle('active', !isSearch);
-    
-    if (isSearch) {
-        els.resetBtn.textContent = 'RESET';
-        els.favToggleBtn.classList.remove('active');
-    } else {
-        els.resetBtn.textContent = '閉じる';
-        els.favToggleBtn.classList.add('active');
-        updateFavorites();
-    }
-}
-
-function createCard(c) {
-    const isFav = favorites.has(c.id);
-    const card = document.createElement('div');
-    const isLong = c.styles.includes('ロング');
-    card.className = `card ${isLong ? 'long' : 'short'}`;
-    card.onclick = function() { this.classList.toggle('expanded'); };
-    
-    card.innerHTML = `
-        <button class="fav-btn ${isFav ? 'active' : ''}" onclick="event.stopPropagation(); toggleFavorite('${c.id}')">
-            <svg fill="${isFav ? 'currentColor' : 'none'}" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
-            </svg>
-        </button>
-        <div class="card-left">
-            <div class="card-header">
-                <div class="cocktail-names">
-                    <span class="name-jp">${c.jp}</span>
-                    <span class="name-en">${c.en}</span>
-                </div>
-            </div>
-            <div class="materials-preview">${c.materials}</div>
-            <div class="card-details">
-                <div class="detail-label">PROFILE</div>
-                <div class="desc-text">${c.desc}</div>
-                <div class="tags-row">
-                    <span class="pill">${c.base}</span>
-                    <span class="pill">${isLong?'ロング':'ショート'}</span>
-                    ${c.flavors.map(f => `<span class="pill ${state.flavors.has(f)?'gold':''}">${f}</span>`).join('')}
-                </div>
-            </div>
-        </div>
-    `;
-    return card;
-}
-
-function toggleFavorite(id) {
-    if (favorites.has(id)) { favorites.delete(id); } else { favorites.add(id); }
-    localStorage.setItem('barRecallFavs', JSON.stringify([...favorites]));
-    updateResults();
-    if (els.viewFavorites.classList.contains('active')) updateFavorites();
-}
-
-function updateResults() {
-    const list = cocktails.filter(c => {
-        if (state.keyword && !([c.jp, c.en, c.desc, c.materials, c.base].some(t => t.toLowerCase().includes(state.keyword)))) return false;
-        if (state.base && c.base !== state.base) return false;
-        if (state.type && !c.styles.includes(state.type)) return false;
-        if (state.style && !c.styles.includes(state.style)) return false;
-        if (state.flavors.size > 0 && !Array.from(state.flavors).some(f => c.flavors.includes(f))) return false;
-        return true;
-    });
-
-    els.searchResultCount.textContent = `${list.length} items`;
-    els.cocktailList.innerHTML = list.length === 0 ? '<div class="empty-state">一致するカクテルがありません</div>' : '';
-    list.forEach(c => els.cocktailList.appendChild(createCard(c)));
-}
-
-function updateFavorites() {
-    const list = cocktails.filter(c => favorites.has(c.id));
-    els.favCount.textContent = `${list.length} SELECTIONS`;
-    els.favList.innerHTML = list.length === 0 ? '<div class="empty-state">お気に入りが登録されていません</div>' : '';
-    list.forEach(c => els.favList.appendChild(createCard(c)));
-}
-
-window.toggleFavorite = toggleFavorite;
-init();
-</script>
 </body></html>
