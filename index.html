@@ -69,7 +69,8 @@
             position: relative;
             z-index: 1;
             padding-bottom: 40px;
-            padding-top: 110px; 
+            /* ご指示通り、余白を104pxに調整しました */
+            padding-top: 104px; 
         }
 
         .app-header {
@@ -4195,7 +4196,7 @@
         <div class="materials-preview">スロージン, アプリコットブランデー, レモン</div>
         <div class="card-details">
             <div class="detail-label">PROFILE</div>
-            <div class="desc-text">哀愁とユーモアを感じさせます。</div>
+            <div class="desc-text">喜劇王チャップリンの名を冠したカクテル。</div>
             <div class="tags-row">
                 <span class="pill">リキュール</span>
                 <span class="pill">ショート</span>
@@ -4217,7 +4218,7 @@
         <div class="materials-preview">カンパリ, スイートベルモット, ソーダ</div>
         <div class="card-details">
             <div class="detail-label">PROFILE</div>
-            <div class="desc-text">ネグローニの原型。</div>
+            <div class="desc-text">ネグローニの原型. </div>
             <div class="tags-row">
                 <span class="pill">リキュール</span>
                 <span class="pill">ロング</span>
@@ -5657,8 +5658,8 @@ const rawCocktails = [
     { id: 'l17', base: 'リキュール', styles: ['ロング', 'トニック'], flavors: ['フルーティ', 'さっぱり', '柑橘'], jp: 'パッソアトニック', en: 'Passoa Tonic', materials: 'パッソア, トニックウォーター', desc: 'トロピカルな酸味が特徴。' },
     { id: 'l18', base: 'リキュール', styles: ['ロング', 'トニック'], flavors: ['フルーティ', 'さっぱり'], jp: 'ミドリオニ', en: 'Midorioni', materials: 'ミドリ, GFJ, トニック', desc: 'メロンとグレープフルーツの融合。' },
     { id: 'l19', base: 'リキュール', styles: ['ショート', 'シェイク'], flavors: ['甘め', '柑橘'], jp: 'バレンシア', en: 'Valencia', materials: 'アプリコットブランデー, オレンジジュース', desc: '太陽のように明るい味わい。' },
-    { id: 'l20', base: 'リキュール', styles: ['ショート', 'シェイク'], flavors: ['甘め', 'フルーティ'], jp: 'チャーリーチャップリン', en: 'Charlie Chaplin', materials: 'スロージン, アプリコットブランデー, レモン', desc: '哀愁とユーモアを感じさせます。' },
-    { id: 'l21', base: 'リキュール', styles: ['ロング', '炭酸'], flavors: ['苦味', 'さっぱり'], jp: 'アメリカーノ', en: 'Americano', materials: 'カンパリ, スイートベルモット, ソーダ', desc: 'ネグローニの原型。' },
+    { id: 'l20', base: 'リキュール', styles: ['ショート', 'シェイク'], flavors: ['甘め', 'フルーティ'], jp: 'チャーリーチャップリン', en: 'Charlie Chaplin', materials: 'スロージン, アプリコットブランデー, レモン', desc: '喜劇王チャップリンの名を冠したカクテル。' },
+    { id: 'l21', base: 'リキュール', styles: ['ロング', '炭酸'], flavors: ['苦味', 'さっぱり'], jp: 'アメリカーノ', en: 'Americano', materials: 'カンパリ, スイートベルモット, ソーダ', desc: 'ネグローニの原型. ' },
     { id: 'l22', base: 'リキュール', styles: ['ロング', 'ジュース', 'シェイク'], flavors: ['甘め', 'クリーミー'], jp: 'スノーボール', en: 'Snowball', materials: 'アドヴォカート, ライム, レモネード', desc: '雪玉のように白くまろやか。' },
     { id: 'l23', base: 'リキュール', styles: ['ロング', 'シェイク', '炭酸'], flavors: ['甘め', 'フルーティ'], jp: 'バイオレットフィズ', en: 'Violet Fizz', materials: 'パルフェタムール, レモン, ソーダ', desc: '華やかに香る紫色のカクテル。' },
     { id: 'l24', base: 'リキュール', styles: ['ロング', 'ジュース'], flavors: ['甘め', 'トロピカル', 'クリーミー'], jp: 'マリブミルク', en: 'Malibu Milk', materials: 'マリブ, 牛乳', desc: '杏仁豆腐のような風味。' },
@@ -5778,6 +5779,12 @@ function init() {
 }
 
 function renderPanels() {
+    // 重複表示を防ぐため、レンダリング前に中身をクリアします
+    els.baseGrid.innerHTML = '';
+    els.typeGrid.innerHTML = '';
+    els.styleGrid.innerHTML = '';
+    els.flavorGrid.innerHTML = '';
+
     CONFIG.bases.forEach(item => els.baseGrid.appendChild(createPanel(item, 'base')));
     CONFIG.types.forEach(item => els.typeGrid.appendChild(createPanel(item, 'type')));
     CONFIG.styles.forEach(item => els.styleGrid.appendChild(createPanel(item, 'style')));
