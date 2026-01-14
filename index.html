@@ -44,7 +44,7 @@
             line-height: 1.6;
             display: flex;
             flex-direction: column;
-            overscroll-behavior: none; /* iOSのバウンスによるヘッダーずれを防止 */
+            overscroll-behavior: none;
         }
 
         .ambient-light {
@@ -73,11 +73,13 @@
             position: relative;
             z-index: 1;
             padding-bottom: 60px;
-            padding-top: 104px; /* ご指示通り104pxに設定 */
+            /* セーフエリアを考慮した動的な余白設定 */
+            padding-top: calc(104px + env(safe-area-inset-top)); 
         }
 
         .app-header {
-            padding: 24px 20px 12px;
+            /* 上部パディングをセーフエリアに合わせて拡張 */
+            padding: calc(24px + env(safe-area-inset-top)) 20px 12px;
             position: fixed;
             top: 0;
             left: 0;
@@ -87,7 +89,7 @@
             background: linear-gradient(to bottom, rgba(5,5,8,1) 0%, rgba(5,5,8,0.95) 85%, transparent 100%);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
-            transform: translateZ(0); /* モバイルでのレンダリングを安定化 */
+            transform: translateZ(0);
         }
         
         .header-top-row {
